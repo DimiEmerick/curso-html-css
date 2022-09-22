@@ -1,0 +1,29 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: darkblue;
+    color: aliceblue;
+}
+
+#content {
+    background-color: rgb(247, 196, 134);
+    text-align: justify;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    width: 600px;
+}
+
+#obs {
+    background-color:darkslategray;
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#listas {
+    background-color: rgb(87, 236, 167);
+    padding: 10px;
+    border-radius: 10px;
+}

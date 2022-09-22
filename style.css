@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#content {
+    width: 800px;
+    text-align: left;
+    margin: auto;
+}
+
+#acess {
+    width: 450px;
+    padding: 15px;
+}
+
+img {
+    float: left;
+}
+
+#intro {
+    background-color: azure;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#obs {
+    background-color: azure;
+    border-radius: 20px;
+    padding: 10px;
+}

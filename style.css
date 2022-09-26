@@ -4,9 +4,12 @@ body {
 }
 
 #content {
+    background-color: rgba(190, 241, 241, 0.63);
+    padding: 10px;
     width: 800px;
     text-align: left;
     margin: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.479);
 }
 
 #acess {
@@ -18,13 +21,8 @@ img {
     float: left;
 }
 
-#intro {
-    background-color: azure;
-    border-radius: 20px;
-    padding: 10px;
-}
-
-#obs {
+.box {
+    text-align: justify;
     background-color: azure;
     border-radius: 20px;
     padding: 10px;

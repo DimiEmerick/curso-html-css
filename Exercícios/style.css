@@ -3,6 +3,7 @@ body {
     text-align: center;
     background-color: darkblue;
     color: aliceblue;
+    font-size: 14px;
 }
 
 #content {
@@ -13,6 +14,12 @@ body {
     padding: 10px;
     margin: auto;
     width: 600px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+}
+
+hr {
+    border: 1px solid;
+    border-color: rgba(80, 80, 80, 0.555);
 }
 
 #obs {
@@ -20,10 +27,13 @@ body {
     color: aliceblue;
     padding: 5px;
     border-radius: 10px;
+    font-size: 12.9px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
 }
 
-#listas {
+.listas {
     background-color: rgb(87, 236, 167);
     padding: 10px;
     border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
 }

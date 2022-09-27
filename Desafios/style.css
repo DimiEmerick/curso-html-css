@@ -1,20 +1,9 @@
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    background-color: darkred;
+    background-image: linear-gradient(90deg, #dd0707, #eb1919, #D12317, #AB1D13, #6B120C);
     color: aliceblue;
-    font-size: 14px;
-}
-
-#content {
-    background-color: rgb(247, 196, 134);
-    text-align: justify;
-    color: black;
-    border-radius: 10px;
-    padding: 10px;
-    margin: auto;
-    width: 600px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+    font-size: 15px;
 }
 
 hr {
@@ -22,18 +11,39 @@ hr {
     border-color: rgba(80, 80, 80, 0.555);
 }
 
+.listas {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#content {
+    background-color: #f86969;
+    text-align: justify;
+    color: black;
+    border-radius: 10px;
+    padding: 17px;
+    margin: auto;
+    width: 625px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+}
 
 #obs {
     background-color:darkslategray;
     color: aliceblue;
     padding: 5px;
     border-radius: 10px;
+    font-size: 12.9px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+    text-align: center;
 }
 
-.listas {
-    background-color: rgb(87, 236, 167);
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+#basic {
+    background-color: #e0e0e0;
+}
+
+#design {
+    background-image: linear-gradient(90deg, red, orange, green, aqua, blue, purple, crimson);
 }

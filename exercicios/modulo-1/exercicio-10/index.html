@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../Imagens/favicon-memo.ico" type="image/x-icon">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Trabalhando com Mídias</h1>
+    <h2>Imagens Flexíveis</h2>
+    <p>Esta imagem muda de tamanho conforme o tamanho da janela:</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/lua-p.jpg" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/lua-m.jpg" type="image/png">
+        <img src="imagens/lua-g.jpg" alt="Imagem Flexível">
+    </picture>
+    <hr>
+    <h2>Áudios</h2>
+    <p>Existem vários arquivos deste áudio nesse documento, seu navegador vai escolher o que ele suporta:</p>
+    <audio preload="metadata" controls>
+        <source src="audios/eletrônica.mp3" type="audio/mpeg">
+        <source src="audios/eletrônica.ogg" type="audio/ogv">
+        <source src="audios/eletrônica.wav" type="audio/wav">
+        <p>Seu navegador não suporta áudio, <a href="audios/sonic-bad.mp3" target="_blank" download="audios/eletrônica.mp3" type="audio/mpeg">baixe-o aqui</a>.</p>
+    </audio>
+    <hr>
+    <h2>Vídeos</h2>
+    <p>Este vídeo está em formato MP4 e contém um poster (foto de capa):</p>
+    <video width="650" src="coding.mp4" poster="imagens/code.jpg" controls>
+    </video>
+</body>
+</html>

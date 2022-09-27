@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../Imagens/favicon-memo.ico" type="image/x-icon">
+    <title>Desafio 7</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <hr>
+    <p>Você está vendo a imagem completa? Tente aumentar o tamanho da sua janela.</p>
+    <a href="https://www.pexels.com/pt-br/foto/arvores-verdes-perto-de-corpo-d-agua-207385/" target="_blank" rel="noopener noreferrer nofollow">
+        <picture>
+            <source media="(max-width: 830px)" srcset="imagens/paisagem-cel.jpg" alt="Paisagem Celular">
+            <source media="(max-width: 1295px)" srcset="imagens/paisagem-tab.jpg" alt="Paisagem Tablet">
+            <source media="(max-width: 1870px)" srcset="imagens/paisagem-hd.jpg" alt="Paisagem HD">
+            <img src="imagens/paisagem-full.jpg" alt="Paisagem Completa">
+        </picture>
+    </a>  
+</body>
+</html>

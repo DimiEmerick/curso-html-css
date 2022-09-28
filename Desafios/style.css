@@ -1,7 +1,8 @@
 body {
+    background-attachment: fixed;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-align: center;
-    background-image: linear-gradient(90deg, #dd0707, #eb1919, #D12317, #AB1D13, #6B120C);
+    background-image: linear-gradient(180deg, #D12317, #AB1D13, #6B120C);
     color: aliceblue;
     font-size: 15px;
 }
@@ -20,7 +21,7 @@ hr {
 }
 
 #content {
-    background-color: #f86969;
+    background-color: #f07676;
     text-align: justify;
     color: black;
     border-radius: 10px;

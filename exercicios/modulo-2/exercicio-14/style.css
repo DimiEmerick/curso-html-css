@@ -1,0 +1,39 @@
+section {
+    background-color: aliceblue;
+    width: 650px;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+}
+h1, h2, h3 {
+    font-family: 'Times New Roman', Times, serif;
+}
+h1 {
+    text-align: center;
+}
+p {
+    font: normal 1em Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+#cont {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+#noserif {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#mono {
+    font-family: 'Courier New', Courier, monospace;
+}
+#hand {
+    font-family: cursive;
+}
+#display {
+    font-family: fantasy;
+}

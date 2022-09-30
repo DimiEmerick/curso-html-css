@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;300;400;700;800;900&display=swap');
+body {
+    background-image: linear-gradient(180deg, #0000D9, #000099, #00008B, #000073, #00004D);
+}
 section {
-    background-color: aliceblue;
+    background-color: antiquewhite;
     width: 650px;
     margin: auto;
     border-radius: 10px;
     padding: 10px;
+    box-shadow: 5px 5px 15px #030347a9;
 }
 h1, h2, h3 {
     font-family: 'Times New Roman', Times, serif;
@@ -16,11 +21,12 @@ p {
     text-align: justify;
 }
 #cont {
-    background-color: antiquewhite;
+    background-color: white;
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    box-shadow: 5px 5px 15px rgba(112, 106, 99, 0.527);
 }
 #serif {
     font-family: 'Times New Roman', Times, serif;
@@ -36,4 +42,7 @@ p {
 }
 #display {
     font-family: fantasy;
+}
+#pesada {
+    font-family: 'Work Sans';
 }

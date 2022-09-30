@@ -15,20 +15,20 @@ hr {
 .listas {
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+    box-shadow: 5px 5px 15px rgba(128, 120, 111, 0.63);
     margin-top: 15px;
     margin-bottom: 15px;
 }
 
 #content {
-    background-color: #6d92e0;
+    background-color: rgb(236, 236, 195);
     text-align: justify;
     color: black;
     border-radius: 10px;
     padding: 17px;
     margin: auto;
     width: 625px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.493);
 }
 
 #obs {
@@ -37,7 +37,7 @@ hr {
     padding: 5px;
     border-radius: 10px;
     font-size: 12.9px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.493);
+    box-shadow: 5px 5px 15px rgba(128, 120, 111, 0.63);
     text-align: center;
 }
 

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../Imagens/favicon-art.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 15</title>
+    <style>
+        .pers {
+            font-weight: bold;
+            text-decoration: none;
+            color: rgb(0, 199, 199);
+        }
+        .pers:visited {
+            color: darkblue;
+        }
+        .pers:hover {
+            text-decoration: underline;
+        }
+        #special:hover {
+            color: darkcyan;
+            background-color: cyan;
+            font-weight: lighter;
+        }
+        #special:hover::before {
+            content: '(';
+        }
+        #special:hover::after {
+            content: ')';
+        }
+        #especial > #conte {
+            display: none;
+        }
+        #especial:hover > #conte {
+            display: block;
+            background-color: rgb(118, 164, 248);
+            border-radius: 10px;
+        }
+        #conte {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>Pseudo-classes e Pseudo-elementos</h1>
+        <p>Uma pseudo-classe CSS é uma palavra-chave adicionada às declarações de um seletor após <strong>um sinal de dois pontos</strong> e especificam um <em>estado especial</em> de um elemento. Existem várias pseudo-classes para estilos, podemos citar <code><abbr title="Usado para selecionar elementos ao colocar o mouse em cima.">:hover</abbr></code>, <code><abbr title="Usado para selecionar links visitados.">:visited</abbr></code>, <code><abbr title="Usado para selecionar links ao serem clicados.">:active</abbr></code>, <code><abbr title="Usado para marcar como selecionado certos inputs.">:checked</abbr></code>, <code><abbr title="Usado para selecionar elementos que não possuem conteúdo.">:empty</abbr></code> e <code><abbr title="Usado para selecionar elementos ao serem clicados.">:focus</abbr></code>.</p>
+        <p>Já um pseudo-elemento CSS é uma palavra-chave adicionada às declarações de um seletor após <strong>dois sinais de dois pontos</strong> e permitem que você formate um <em>pedaço específico</em> do elemento referenciado. Os principais pseudo-elementos usados nas CSS são <code><abbr title="Usado para inserir conteúdo antes do elemento selecionado.">::before</abbr></code>, <code><abbr title="Usado para inserir conteúdo depois do elemento selecionado.">::after</abbr></code>, <code><abbr title="Usado para selecionar a primeira letra de um elemento.">::first-letter</abbr></code>, <code><abbr title="Usado para selecionar a primeira linha de um elemento.">::first-line</abbr></code>.</p>
+        <hr>
+        <div>
+            <h2>Exemplo 1: Links</h2>
+            <p>Irei agora criar um exemplo personalizando <em>links</em>. Normalmente um <em>link</em> por padrão vem formatado <a href="index.html">assim</a>.</p>
+            <p>Agora, este é um link <a href="index.html" class="pers">personalizado</a>.</p>
+            <p>Para ver o código fonte desse exercício, acesse o meu <a href="github.com/DimiEmerick/Curso-HTML-CSS/blob/main/exercicios/modulo-2/exercicio-15/index.html" target="_blank" rel="noopener noreferrer nofollow" class="pers" id="special">repositório</a> (esse é um link ainda mais personalizado).</p>
+        </div>
+        <hr>
+        <div>
+            <h2>Exemplo 2: Interação</h2>
+            <p>Logo abaixo, temos um <strong>conteúdo especial</strong> estilizado, que será mostrado ao passar o mouse sobre ele.</p>
+            <div id="especial">
+                Passe o mouse aqui!
+                <p id="conte">PARABÉNS, ESTE É O CONTEÚDO ESPECIAL!</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

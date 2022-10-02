@@ -18,10 +18,15 @@ section {
     border-radius: 15px;
     box-shadow: 5px 5px 15px #030347a9;
 }
-
+td {
+    width: 130px;
+    text-align: center;
+}
 .cont {
     background-color: white;
     border-radius: 10px;
     padding: 10px;
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 15px rgba(112, 106, 99, 0.527);
 }

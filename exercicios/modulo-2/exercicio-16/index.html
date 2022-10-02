@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../Imagens/favicon-art.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 16</title>
+    <style>
+        #block {
+            width: 150px;
+            height: 25px;
+            background-color: aquamarine;
+            border: 10px solid lightseagreen;
+            border-radius: 5px;
+            padding: 20px;
+            outline: 30px solid cornflowerblue;
+            margin: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1 style="text-align: center;">Modelo de Caixas</h1>
+        <p>De forma simples e objetiva, baseado em um conceito chamado “<em>box model</em>”, a grande maioria dos elementos HTML que temos em sites são como caixas. Elas são <em>containers</em> que armazenam conteúdos ou até mesmo outras caixas.</p>
+        <hr>
+            <h2>Exemplo</h2>
+            <p>Abaixo você verá um exemplo de um elemento <code>&lt;p&gt;</code> usando <em>box model</em>.</p>
+            <div class="cont">
+            <p id="block">Exemplo de Caixa</p>
+            <p>Nessa caixa podemos ver as seguintes propriedades:</p>
+            <ul>
+                <li>width: Largura da caixa;</li>
+                <li>height: Altura da caixa;</li>
+                <li>border: Borda da caixa (tamanho, tipo, cor(verde escuro), arredondamento);</li>
+                <li>padding: Preenchimento da caixa (conteúdo invisível);</li>
+                <li>outline: Contorno da caixa (tamanho, tipo, cor(azul claro));</li>
+                <li>margin: Margem da caixa.</li>
+            </ul>
+        </div>
+        <hr>
+        <h2>Tipos de Caixas</h2>
+        <p>Dependendo do comportamento da caixa, podemos classificar um elemento em uma de duas categorias:</p>
+        <div class="cont">
+            <h3><em>block-level</em></h3>
+            <p>Um elemento dito <em>block-level</em> sempre vai se iniciar em uma <strong>nova linha</strong> e vai ocupar a <ins>largura total do elemento onde ele está contido</ins> (se não especificado nenhuma largura). Se não estiver contido em nenhuma outra caixa, ele vai ocupar 100% da largura do corpo do documento.</p>
+            <p>Exemplo de alguns elementos HTML que são <em>block-level</em>:</p>
+            <table border="1">
+                <tr>
+                    <td>adress</td>
+                    <td>article</td>
+                    <td>aside</td>
+                    <td>blockquote</td>
+                    <td>canvas</td>
+                    <td>dd</td>
+                </tr>
+                <tr>
+                    <td>div</td>
+                    <td>dl</td>
+                    <td>dt</td>
+                    <td>fieldset</td>
+                    <td>figcaption</td>
+                    <td>figure</td>
+                </tr>
+                <tr>
+                    <td>footer</td>
+                    <td>form</td>
+                    <td>h1 - h6</td>
+                    <td>header</td>
+                    <td>hr</td>
+                    <td>li</td>
+                </tr>
+                <tr>
+                    <td>main</td>
+                    <td>nav</td>
+                    <td>noscript</td>
+                    <td>ol</td>
+                    <td>p</td>
+                    <td>pre</td>
+                </tr>
+                <tr>
+                    <td>section</td>
+                    <td>table</td>
+                    <td>tfoor</td>
+                    <td>ul</td>
+                    <td>video</td>
+                </tr>
+            </table>
+        </div>
+        <div class="cont">
+            <h3><em>inline-level</em></h3>
+            <p>Um elemento do tipo inline-level não vai começar em uma nova linha, e sim <strong>no ponto exato onde foram definidos</strong>. E a largura dele vai ocupar apenas o <ins>tamanho relativo ao seu conteúdo</ins>.</p>
+            <p>Exemplo de alguns elementos HTML que são <em>inline-level</em>:</p>
+            <table border="1">
+                <tr>
+                    <td>a</td>
+                    <td>abbr</td>
+                    <td>acronym</td>
+                    <td>b</td>
+                    <td>bdo</td>
+                    <td>br</td>
+                </tr>
+                <tr>
+                    <td>button</td>
+                    <td>cite</td>
+                    <td>code</td>
+                    <td>dfn</td>
+                    <td>em</td>
+                    <td>i</td>
+                </tr>
+                <tr>
+                    <td>img</td>
+                    <td>input</td>
+                    <td>kbd</td>
+                    <td>label</td>
+                    <td>map</td>
+                    <td>object</td>
+                </tr>
+                <tr>
+                    <td>output</td>
+                    <td>q</td>
+                    <td>samp</td>
+                    <td>script</td>
+                    <td>select</td>
+                    <td>small</td>
+                </tr>
+                <tr>
+                    <td>span</td>
+                    <td>strong</td>
+                    <td>sub</td>
+                    <td>textarea</td>
+                    <td>tt</td>
+                    <td>var</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+</html>

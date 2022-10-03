@@ -32,6 +32,12 @@ hr {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.listas > ul {
+    display: none;
+}
+.listas:hover > ul {
+    display: grid;
+}
 
 #content {
     background-color: rgb(126, 236, 200);

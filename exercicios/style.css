@@ -33,6 +33,12 @@ hr {
     margin-top: 15px;
     margin-bottom: 15px;
 }
+.listas > ul {
+    display: none;
+}
+.listas:hover > ul {
+    display: grid;
+}
 
 #content {
     background-color: bisque;

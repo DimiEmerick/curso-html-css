@@ -7,6 +7,14 @@ body {
 h1, h2 {
     font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
 }
+a {
+    color: #0000D9;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+
+}
 #content {
     background-color: rgba(190, 241, 241, 0.63);
     padding: 10px;

@@ -12,6 +12,15 @@ h1, h2 {
     font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
 }
 
+a {
+    color: #0000D9;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+
+}
+
 hr {
     border: 1px solid;
     border-color: rgba(80, 80, 80, 0.555);
@@ -48,8 +57,10 @@ hr {
 
 #basic {
     background-color: #e0e0e0;
+    border: 1px solid black;
 }
 
 #design {
     background-image: linear-gradient(90deg, red, orange, green, aqua, blue, purple, crimson);
+    border: 1px solid black;
 }

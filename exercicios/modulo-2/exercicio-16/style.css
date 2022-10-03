@@ -24,6 +24,7 @@ td {
 }
 .cont {
     background-color: white;
+    border: 1px solid #0000D9;
     border-radius: 10px;
     padding: 10px;
     margin-top: 10px;

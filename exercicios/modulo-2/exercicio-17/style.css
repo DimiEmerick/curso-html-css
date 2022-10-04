@@ -1,44 +1,86 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+/* Configurações Gerais */
 body {
     background-image: linear-gradient(180deg, #0000D9, #000099, #00008B, #000073, #00004D);
     background-attachment: fixed;
     font: 16px 'Source Sans Pro', Arial, Helvetica, sans-serif;
     text-align: justify;
+    margin: 0;
 }
 h1, h2, h3, h4 {
     font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
 }
-div {
-    margin: 0px 100px;
-}
+
+/* Cabeçalho */
 header {
-    background-color: coral;
+    background-color: #00004D;
     padding: 10px;
+    color: white;
+    font-size: 12px;
+    border-bottom: 1px solid #1d1c1c;
 }
+
+/* Nav e interação dos itens */
 nav {
     background-color: aliceblue;
     padding: 10px;
+    color: black;
 }
+nav > div {
+    display: inline-block;
+    margin-right: 15px;  
+    cursor: default;
+    color: #0000D9;  
+}
+div > p {
+    display: none;
+}
+div:hover > p {
+    color: black;
+    display: block;
+}
+
+/* Conteúdo */
 main {
     background-color: bisque;
     padding: 10px;
+    margin: 0px 100px;
+    box-shadow: 10px 0px 15px #030347a9;
+    border-left: 2px solid #1d1c1c;
+    border-right: 2px solid #1d1c1c;
+}
+main > aside {
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 5px 5px 15px rgba(112, 106, 99, 0.527);
 }
 section {
     background-color: aliceblue;
     padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: 5px 0px 15px rgba(112, 106, 99, 0.527);
 }
 article {
     background-color: antiquewhite;
     padding: 10px;
     margin: 10px 0px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(109, 112, 116, 0.527);
+}
+article > aside {
+    border-radius: 10px;
+    border: 1px solid rgb(179, 144, 101);
 }
 aside {
     background-color: burlywood;
     padding: 10px;
 }
+
+/* Rodapé */
 footer {
-    background-color: coral;
+    background-color: #1d1c1c;
     padding: 10px;
+    color: white;
+    font-size: 12px;
 }

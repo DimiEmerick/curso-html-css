@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+body {
+    background-image: linear-gradient(180deg, #0000D9, #000099, #00008B, #000073, #00004D);
+    background-attachment: fixed;
+    font: 16px 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+h1, h2, h3, h4 {
+    font-family: 'Roboto Slab', 'Times New Roman', Times, serif;
+}
+div {
+    margin: 0px 100px;
+}
+header {
+    background-color: coral;
+    padding: 10px;
+}
+nav {
+    background-color: aliceblue;
+    padding: 10px;
+}
+main {
+    background-color: bisque;
+    padding: 10px;
+}
+section {
+    background-color: aliceblue;
+    padding: 10px;
+}
+article {
+    background-color: antiquewhite;
+    padding: 10px;
+    margin: 10px 0px;
+}
+aside {
+    background-color: burlywood;
+    padding: 10px;
+}
+footer {
+    background-color: coral;
+    padding: 10px;
+}

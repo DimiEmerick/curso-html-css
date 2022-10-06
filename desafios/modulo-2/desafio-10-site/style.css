@@ -1,5 +1,7 @@
+/* FONTES */
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @font-face {
     font-family: 'idroid';
     src: url(fontes/idroid.otf) format(opentype);
@@ -7,9 +9,10 @@
 
 /* GERAL */
 body {
-    background-color: #84E1AD;
+    background-color: #EBE5C5;
     font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     margin: 0;
+    font-size: 1.2em;
 }
 
 a {
@@ -19,6 +22,9 @@ a {
 }
 a:hover {
     text-decoration: underline;
+    background-color: rgba(116, 197, 170, 0.712);
+    border-radius: 5px;
+    padding: 0.5px;
 }
 a::after {
     content: ' 🔗';
@@ -26,25 +32,31 @@ a::after {
 
 h2, h3 {
     font-family: 'idroid', serif;
+    font-weight: normal;
     color: #256441;
     text-align: left;
+    margin-top: 0;
+}
+
+strong {
+    color: #256441;
 }
 
 /* CABEÇALHO */
 header {
-    background-image: linear-gradient(180deg, #3CDB84, #195734);
+    background-image: linear-gradient(180deg, #2FA766, #063C1E);
     color: white;
+    height: 250px;
     padding: 1px;
-    box-shadow: 1px 1px 15px #1957348c;
+    box-shadow: 1px 1px 15px #6d6b5c96;
 }
 header > h1 {
-    font-family: 'Arial Narrow Bold', sans-serif;
+    font: normal 3em 'Bebas Neue', 'Arial Narrow Bold', sans-serif;
     text-align: center;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.541);
 }
 header > p {
     text-align: center;
-    width: 450px;
     margin: auto;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.541);
 }
@@ -54,9 +66,14 @@ nav > ul > li {
     margin-right: 25px;
     text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.541);
     cursor: pointer;
+    border-radius: 10px;
+    padding: 5px;
 }
-nav >ul > li:hover {
+nav > ul > li:hover {
     text-decoration: underline;
+    background-color: #195734;
+    color: #2FA866;
+    box-shadow: inset 1px 1px 10px rgba(0, 0, 0, 0.541);
 }
 
 /* CONTEÚDO PRINCIPAL */
@@ -68,7 +85,7 @@ main {
     border-radius: 0px 0px 10px 10px;
     margin-bottom: 15px;
     text-align: center;
-    box-shadow: 1px 1px 15px #1957348c;
+    box-shadow: 1px 1px 15px #6d6b5c96;
 }
 main > p {
     text-align: justify;
@@ -101,9 +118,7 @@ aside > p {
 }
 div {
     display: inline-block;
-}
-span {
-    text-decoration: underline;
+    margin-left: 0;
 }
 
 #especial {

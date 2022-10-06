@@ -17,3 +17,5 @@ ___
 * Psicologia das Cores (Cores em CSS)
 * Tipografia (Fontes em CSS)
 * Seletores Personalizados (id, class, pseudo-class, pseudo-element)
+* Box Model
+* Grouping Tags (header, nav, main, article, aside, footer)

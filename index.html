@@ -6,35 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="Imagens/favicon-desktop.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Curso de HTML e CSS</title>
+    <title>HTML5 e CSS3 | Dimitrios Emerick</title>
 </head>
 <body>
-    <h1>Repositório do Curso de HTML e CSS</h1>
-    <section id="content">
-        <p style="text-align: center;">Olá! Você está acessando o meu repositório público (Dimitrios Emerick).</p>
-        <hr>
-        <div class="box">
-            <img src="Imagens/cursoemvideo-logo.png" alt="Logo Curso em Vídeo">
-            <p>Aqui você tem acesso a todos os conteúdos que aprendi durante o curso do <a href="https://www.cursoemvideo.com" target="_blank" rel="noopener noreferrer">Curso em Vídeo</a> de <a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank" rel="noopener noreferrer">Desenvolvimento Web</a>. <br>
-            Isso inclui exercícios e desafios de todos os módulos que estou fazendo até o momento.</p>
-        </div>
-        <div id="acess">
+    <header>
+        <h1>Repositório do Curso de <span id="html">HTML5</span> e <span id="css">CSS3</span></h1>
+    </header>
+    <main>
+        <section>
+            <p>Olá! Você está acessando o meu repositório público (Dimitrios Emerick)</p>
+
             <hr>
-            <h2>Acesso aos Conteúdos</h2>
-            <ul>
-                <li><a href="exercicios/index.html">Execute os exercícios</a></li>
-                <li><a href="desafios/index.html">Execute os desafios</a></li>
-                <li><a href="https://github.com/DimiEmerick/Curso-HTML-CSS/tree/main/exercicios" target="_blank">Veja o código-fonte dos exercícios</a></li>
-                <li><a href="https://github.com/DimiEmerick/Curso-HTML-CSS/tree/main/desafios" target="_blank">Veja o código-fonte dos desafios</a></li>
-            </ul>
+
+            <div class="obs" id="curso">
+                <img src="Imagens/cursoemvideo-logo.png" alt="Logo do CursoemVideo">
+                <p>Aqui você tem acesso a todos os conteúdos que aprendi durante o curso do <a class="special" href="https://www.cursoemvideo.com" target="_blank" rel="noopener noreferrer">Curso em Vídeo</a> de <a class="special" href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" target="_blank" rel="noopener noreferrer">Desenvolvimento Web</a>.
+                    <br>
+                Isso inclui exercícios e desafios de todos os módulos que estou fazendo até o momento.</p>
+            </div>
+
             <hr>
-        </div>
-        <div class="box">
-            <img id="vsc" src="Imagens/vsc-logo.png" alt="Logo Visual Studio Code">
-            <p>Visual Studio Code foi o principal e o único editor de código usado para a criação e desenvolvimento dos códigos desse respositório, inclusive o único que uso atualmente.</p>
-        </div>
-        <hr>
-        <p style="font-size: 10px; text-align: center;">Esse repositório (e essa página em si, assim como as páginas de acesso aos conteúdos), serão <strong>atualizados</strong> conforme avanço no curso e expando meus conhecimentos nas linguagens.</p>
-    </section>
+
+            <div class="content">
+                <h2>Acesso aos Conteúdos</h2>
+                <a class="ex" href="exercicios/exercicios.html">Exercícios</a>
+                <a class="ex" href="https://github.com/DimiEmerick/Curso-HTML-CSS/tree/main/exercicios" target="_blank">Código-fonte dos exercícios</a>
+                <br>
+                <a class="def" href="desafios/desafios.html">Desafios</a>
+                <a class="def" href="https://github.com/DimiEmerick/Curso-HTML-CSS/tree/main/desafios" target="_blank">Código-fonte dos desafios</a>
+            </div>
+
+            <hr>
+
+            <div class="obs" id="vsc">
+                <img id="vsc" src="Imagens/vsc-logo.png" alt="Logo Visual Studio Code">
+                <p>Visual Studio Code foi o principal e o único editor de código usado para a criação e desenvolvimento dos códigos desse respositório, inclusive o único que uso atualmente.</p>
+            </div>
+
+            <hr>
+
+            <p id="peq">Esse repositório (e essa página em si, assim como as páginas de acesso aos conteúdos), serão <strong>atualizados</strong> conforme avanço no curso e expando meus conhecimentos nas linguagens.</p>
+        </section>
+    </main>
+    <footer>
+        <p>Site de demonstração de conteúdo do repositório no GitHub, feito por <a class="special" href="https://github.com/DimiEmerick" target="_blank" rel="noopener noreferrer nofollow">Dimitrios Emerick</a>.</p>
+    </footer>
 </body>
 </html>

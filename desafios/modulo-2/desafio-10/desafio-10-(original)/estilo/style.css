@@ -123,6 +123,17 @@ main img.pequena {
     margin: auto;
 }
 
+#obs {
+    background-color: darkslategray;
+    color: white;
+
+    text-align: center;
+
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
 
 /* VÍDEO */
 div.video {  /* DIV RESPONSIVA */

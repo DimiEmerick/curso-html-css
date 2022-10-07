@@ -144,6 +144,17 @@ main a:hover {
     box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.15);
 }
 
+#obs {
+    background-color: darkslategray;
+    color: white;
+
+    font-size: 0.9em;
+    text-align: center;
+
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
 
 /* IMAGENS */
 main img {

@@ -19,3 +19,4 @@ ___
 * Seletores Personalizados (id, class, pseudo-class, pseudo-element)
 * Box Model
 * Grouping Tags (header, nav, main, article, aside, footer)
+* Positions (absolute, relative, static, sticky)

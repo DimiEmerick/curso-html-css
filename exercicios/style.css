@@ -19,6 +19,7 @@
 }
 
 body {
+    background-color: var(--corA3);
     font: normal 1.1em var(--fonte-padrao);
 }
 

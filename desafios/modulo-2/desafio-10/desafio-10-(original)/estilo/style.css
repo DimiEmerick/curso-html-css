@@ -52,7 +52,7 @@ header > p {
     font: 1.2em var(--fonte-padrao);
     color: white;
     padding: 0px 10px;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 nav {

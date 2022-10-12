@@ -1,0 +1,29 @@
+body {
+    background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 32%;
+}
+/*
+div.quadrado {
+    display: inline-block;
+
+    background-color: lightblue;
+    
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+div#q1 {
+    background-color: skyblue;
+}
+div#q2 {
+    background-image: linear-gradient(180deg, yellow, orange);
+}
+div#q3 {
+    background-image: url(imagens/pattern003.png);
+}
+*/

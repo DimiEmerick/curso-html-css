@@ -143,7 +143,7 @@ section.lista > ul {
     margin-left: 30px;
 }
 
-li > a {
+section a {
     color: var(--corA3);
 
     font-weight: bold;
@@ -153,10 +153,17 @@ li > a {
 
     transition-duration: .25s;
 }
-li > a:hover {
+section a:hover {
     text-decoration: underline;
 
     padding: 3px;
+}
+
+section.lista p {
+    font-size: 0.85em;
+    text-align: justify;
+
+    margin: 10px;
 }
 
 .feito::before {
@@ -169,12 +176,20 @@ li > a:hover {
     content: '\274C\00A0';
 }
 
+#git:hover {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
 #basic {
     background-color: #e0e0e0;
 }
 
 #design {
     background-image: linear-gradient(90deg, red, orange, green, aqua, blue, purple, crimson);
+}
+
+#vers {
+    background-image: linear-gradient(180deg, #f88847, #ee6312);
 }
 
 /* RODAPÉ */

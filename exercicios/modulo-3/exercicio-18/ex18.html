@@ -4,12 +4,166 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../Imagens/favicon-clip.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>Exercício 18</title>
 </head>
 <body>
-    <div class="quadrado" id="q1"></div>
-    <div class="quadrado" id="q2"></div>
-    <div class="quadrado" id="q3"></div>
+    <header>
+        <h1><em>Background</em></h1>
+    </header>
+
+    <nav>
+        <li><a href="../../exercicios.html">Exercícios</a></li>
+        <li><a href="#">Código</a></li>
+    </nav>
+
+    <main>
+        <article>
+            <p>Nesse exercício explicarei e demonstrarei diversas maneiras de se trabalhar com imagens de fundo (<em>backgrounds</em>) em CSS.</p>
+
+            <section id="p">
+                <h2>Cores de Fundo</h2>
+
+                <p>De forma geral, existem três maneiras mais simples de preencher uma caixa em HTML, usando <strong>cores sólidas</strong>, <strong>gradientes</strong> ou <strong>imagens</strong>. Essas formas são representadas a seguir:</p>
+
+                <div class="imgs">
+                    <figure>
+                        <div class="quadrado" id="q1"></div>
+                        <figcaption>Cor Sólida</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="q2"></div>
+                        <figcaption>Gradiente</figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="q3"></div>
+                        <figcaption>Imagem</figcaption>
+                    </figure>
+                </div>
+
+            </section>
+
+            <section>
+                <h2>Imagens</h2>
+
+                <p>É possível colocar <strong>imagens</strong> como fundo de uma caixa e configurar suas propriedades de diversas maneiras.</p>
+
+                <h3>Background Repeat</h3>
+                Com essa propriedade, é possível definir se uma imagem de fundo irá se <strong>repetir</strong> quando o tamanho da caixa em que estiver contida for maior do que o tamanho da imagem em si. Por padrão ela sempre vai ser repetida. Essa propriedade possui 4 valores:
+
+                <div class="imgs">
+                    <figure>
+                        <div class="quadrado" id="rep1"></div>
+                        <figcaption><code>repeat</code></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="rep2"></div>
+                        <figcaption><code>no-repeat</code></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="rep3"></div>
+                        <figcaption><code>repeat-x</code></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="rep4"></div>
+                        <figcaption><code>repeat-y</code></figcaption>
+                    </figure>
+                </div>
+
+                <h3>Background Position</h3>
+
+                <p>Além de escolher o nível de repetição do background, também podemos mudar a posição de referência de início das repetições. Por padrão, é considerado o canto esquerdo superior (<code>left top</code>), mas podemos ter várias opções.</p>
+
+                <div class="imgs">
+                    <figure>
+                        <div class="quadrado" id="pos1"></div>
+                        <figcaption><code>left top</code></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="pos2"></div>
+                        <figcaption><code>center top</code></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="pos3"></div>
+                        <figcaption><code>right top</code></figcaption>
+                    </figure>
+                </div>
+                <div class="imgs">
+                    <figure>
+                        <div class="quadrado" id="pos4"></div>
+                        <figcaption><code>left center</code></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="pos5"></div>
+                        <figcaption><code>center center</code></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="pos6"></div>
+                        <figcaption><code>right center</code></figcaption>
+                    </figure>
+                </div>
+                <div class="imgs">
+                    <figure>
+                        <div class="quadrado" id="pos7"></div>
+                        <figcaption><code>left bottom</code></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="pos8"></div>
+                        <figcaption><code>center bottom</code></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="pos9"></div>
+                        <figcaption><code>right bottom</code></figcaption>
+                    </figure>
+                </div>
+                    
+                <h3>Background Size</h3>
+
+                <p>Outra coisa que podemos fazer é redimensionar a imagem para forçá-la a caber na caixa. Por padrão, nenhum redimensionamento será aplicado, e a imagem será exibida do seu tamanho natural. Porém, podemos usar a propriedade <code>background-size</code> para alterar esse comportamento.</p>
+
+                <div class="imgs">
+                    <figure>
+                        <div class="quadrado" id="size1"></div>
+                        <figcaption><code>auto</code></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="size2"></div>
+                        <figcaption><code>[x]%</code></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="size3"></div>
+                        <figcaption><code>cover</code></figcaption>
+                    </figure>
+                    <figure>
+                        <div class="quadrado" id="size4"></div>
+                        <figcaption><code>contain</code></figcaption>
+                    </figure>
+                </div>
+
+                <ul>
+                    <li><strong>auto</strong>: A imagem de fundo será aplicada em seu tamanho original.</li>
+                    <li><strong>[x]%</strong>: Redimensiona a largura da imagem e faz a altura se adaptar automaticamente.</li>
+                    <li><strong>cover</strong>: Muda o tamanho da imagem para que ela seja sempre totalmente exibida na tela, sem nenhum corte.</li>
+                    <li><strong>contain</strong>: Redimensiona a imagem para que ela cubra o contêiner, mesmo que para isso ocorram alguns eventuais cortes.</li>
+                </ul>
+
+                <h3>Background Attachment</h3>
+
+                <p>A última propriedade que podemos configurar é o vínculo (<em>attachment</em>) da imagem de fundo com o resto do documento, principalmente se o conteúdo for maior do que a altura da página e seja necessário vazar uma rolagem vertical.</p>
+
+                <ul>
+                    <li><strong>scroll</strong>: (padrão) a imagem de fundo vai rolar junto com o conteúdo.</li>
+                    <li><strong>fixed</strong>: A imagem de fundo vai ficar fixada enquanto o conteúdo vai sendo rolado (essa propriedade você pode observar no fundo desse site).</li>
+                </ul>
+            </section>
+
+            <p>Esse foi meu aprendizado sobre as <strong>imagens de fundo</strong>.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Exercício 18 do Módulo 3: &#x1F9F7;  Versionamento, do Curso de HTML5 e CSS3 do <a href="https://www.cursoemvideo.com" target="_blank" rel="noopener noreferrer nofollow">CursoemVideo</a>, feito por <a href="https://github.com/DimiEmerick" target="_blank" rel="noopener noreferrer nofollow">Dimitrios Emerick</a>.</p>
+    </footer>
 </body>
 </html>

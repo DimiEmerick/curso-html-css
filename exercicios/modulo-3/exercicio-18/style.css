@@ -1,20 +1,133 @@
-body {
-    background-image: url(https://gustavoguanabara.github.io/html-css/imagens/mascote.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 32%;
-}
-/*
-div.quadrado {
-    display: inline-block;
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
-    background-color: lightblue;
-    
-    width: 300px;
-    height: 300px;
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --corA1: #4450E0;
+    --corA2: #3C47C7;
+    --corA3: #303AA1;
+    --corA4: #5b67eb;
+
+    --fonte-padrao: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    --fonte-titulo: 'Roboto Slab', Times, serif;
+}
+
+body {
+    font: normal 1em var(--fonte-padrao);
+}
+
+
+/* CABEÇALHO */
+header {
+    background-color: var(--corA1);
+
+    font: normal 1.5em var(--fonte-titulo);
+    text-align: center;
+
+    padding: 15px 0px;
+    border-bottom: 1px solid var(--corA3);
+}
+
+nav {
+    background-image: linear-gradient(90deg, var(--corA2), var(--corA1), var(--corA2));
+
+    font-size: 1.3em;
+    text-align: center;
+
+    padding: 10px 0px;
+    border-bottom: 1px solid var(--corA3);
+}
+nav li {
+    display: inline-block;
+}
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px;
+    margin: 0px 100px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition-duration: .1s;
+}
+nav a:hover {
+    background-color: var(--corA4);
+    border: 1px solid var(--corA3);
+}
+
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    background-image: url(imagens/wallpaper004.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 30px 0;
+
+    line-height: 1.5em;
+}
+main h1, main h2, main h3{
+    font-family: var(--fonte-titulo);
+
+    margin: 0.5em 0;
+}
+
+article {
+    background-color: azure;
+
+    max-width: 750px;
+    margin: auto;
+    border-radius: 10px;
+    border: 1px solid var(--corA3);
+}
+article > p {
+    font-size: 1.3em;
+    text-align: center;
+    padding: 15px;
+}
+
+section {
+    background-color: aliceblue;
+
+    padding: 1em;
+    border-bottom: 1px solid var(--corA3);
+}
+section#p {
+    border-top: 1px solid var(--corA3);
+}
+section p {
+    margin-bottom: 1em;
+}
+section ul {
+    list-style-position: inside;
+    list-style-type: none;
+    margin: 1em;
+}
+
+
+/* IMAGENS */
+div.imgs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+div.quadrado {  
+    width: 100px;
+    height: 100px;
     margin: 10px;
     border: 2px solid black;
     border-radius: 20px;
+}
+
+figcaption {
+    text-align: center;   
 }
 
 div#q1 {
@@ -26,4 +139,137 @@ div#q2 {
 div#q3 {
     background-image: url(imagens/pattern003.png);
 }
-*/
+
+div#rep1 {
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position: center center;
+}
+div#rep2 {
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+div#rep3 {
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position: center center;
+    background-repeat: repeat-x;
+}
+div#rep4 {
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position: center center;
+    background-repeat: repeat-y;
+}
+
+div#pos1{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+div#pos2{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+div#pos3{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position: right top;
+    background-repeat: no-repeat;
+}
+div#pos4{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+div#pos5{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+div#pos6{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+div#pos7{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+div#pos8{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+div#pos9{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position: right bottom;
+    background-repeat: no-repeat;
+}
+
+div#size1{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: auto;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+div#size2{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: 25%;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+div#size3{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: cover;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+div#size4{
+    background-image: url('https://gustavoguanabara.github.io/html-css/imagens/mascote.png');
+    background-size: contain;
+    background-position:center center;
+    background-repeat: no-repeat;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: var(--corA1);
+    color: white;
+
+    font-size: 1em;
+    text-align: center;
+
+    padding: 5px;
+}
+footer a {
+    color: white;
+    
+    font-weight: bold;
+    text-decoration: none;
+
+    padding: 5px;
+    border-radius: 5px;
+}
+footer a:hover {
+    text-decoration: underline;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 610px) {
+    nav a {
+        margin: 0 30px;
+    }
+}

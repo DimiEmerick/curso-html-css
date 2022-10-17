@@ -33,6 +33,15 @@ header {
     padding: 15px 0px;
     border-bottom: 1px solid var(--corA3);
 }
+header h1 {
+    background-image: url(imagens/wallpaper005.jpg);
+    background-position: center top;
+    background-size: cover;
+    
+    width: 300px;
+    margin: auto;
+    border-radius: 3px;
+}
 
 nav {
     background-image: linear-gradient(90deg, var(--corA2), var(--corA1), var(--corA2));
@@ -49,6 +58,7 @@ nav li {
 nav a {
     color: white;
 
+    font-weight: bold;
     text-decoration: none;
 
     padding: 10px;

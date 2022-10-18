@@ -1,0 +1,88 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+
+/*  CONFIGURAÇÕES GERAIS  */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font: normal 1em 'Sriracha', cursive;
+}
+
+a {
+    color: white;
+    
+    font-weight: bold;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+
+/*  CABEÇALHO  */
+header {
+    background-color: black;
+    color: white;
+
+    text-align: center;
+
+    padding: 1.5em;
+}
+header h1 {
+    font: normal 3em 'Passion One', display;
+}
+header p {
+    font: normal 1em Arial, sans-serif;
+}
+
+
+/*  CONTEÚDO  */
+main p {
+    display: block;
+    font-size: 1.3em;
+    width: 13em;
+    margin: 30px;
+    padding: 5px;
+}
+
+/*  IMAGENS  */
+div {
+    display: flex;
+    align-items: center;
+
+    background-size: 150%;
+
+    height: 25em;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7);
+}
+
+div#b1 {
+    background-image: url(imagens/background001.jpg);
+    background-position: center right;
+}
+div#b2 {
+    background-image: url(imagens/background002.jpg);
+    background-position: bottom left;
+}
+
+div > p {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
+
+
+/*  RODAPÉ  */
+footer {
+    background-color: black;
+    color: white;
+
+    font: normal .75em Arial, sans-serif;
+    text-align: center;
+
+    padding: 1em; 
+}

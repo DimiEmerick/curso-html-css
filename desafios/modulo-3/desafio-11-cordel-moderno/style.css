@@ -8,7 +8,12 @@
     padding: 0;
 }
 
+html {
+    min-height: 100vh;
+}
+
 body {
+    min-height: 100vh;
     background-image: linear-gradient(145deg, white, lightgray);
     font: normal 1em Arial, sans-serif;
 }
@@ -35,6 +40,7 @@ header {
 }
 header h1 {
     font: normal 3.5em 'Passion One', display;
+    font-variant: small-caps;
 }
 header p {
     font: normal 1em Arial, sans-serif;
@@ -60,39 +66,29 @@ nav a:hover {
 }
 
 /*  CONTEÚDO  */
-main p {
-    display: block;
-
+div {
     font-family: 'Sriracha', cursive;
-    font-size: 1.3em;
-
-    width: 13em;
-    margin: 30px;
-    padding: 5px;
+    font-size: 1.25em;
+    line-height: 2em;
+    padding: 10vh 0;
 }
-
 div.fora {
-    max-width: 1000px;
-    margin: auto;
+    background-color: white;
+    color: black;
+    padding-left: 25vw;
 }
-
-/*  PARALLAX  */
 div.dentro {
-    display: flex;
-    align-items: center;
-
-    background-size: cover;
+    background-color: black;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-
-    height: 25em;
+    background-size: cover;
+    color: white;
+    padding-left: 50px;
     box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.7);
 }
 div.dentro > p {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-shadow: 1px 1px 1px black;
-    margin-left: 150px;
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 div#b1 {

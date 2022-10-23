@@ -5,113 +5,169 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../../Imagens/favicon-clip.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
     <title>Exercício 19</title>
-    <style>
-        table {
-            position: relative;
-            text-align: center;
-            width: 200px;
-            height: 100px;
-            margin: 2em 0;
-            border-collapse: collapse;
-        }
-        table.especial thead > tr > th, tfoot {
-            position: sticky;
-            top: 0;
-            background-color: darkgray;
-        }
-        table.especial tbody > tr:nth-child(even) {
-            background-color: lightgray;
-        }
-        th {
-            color: white;
-            border: 1px solid black;
-        }
-        td {
-            border: 1px solid black;
-        }
-        li {
-            height: 50px;
-            width: 100px;
-            background-color: aqua;
-        }
-    </style>
+    <script src="https://kit.fontawesome.com/142432d4b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <table>
-        <tr>
-            <td>Dado 1</td>
-            <td>Dado 2</td>
-            <td>Dado 3</td>
-        </tr>
-        <tr>
-            <td>Dado 4</td>
-            <td>Dado 5</td>
-            <td>Dado 6</td>
-        </tr>
-        <tr>
-            <td>Dado 7</td>
-            <td>Dado 8</td>
-            <td>Dado 9</td>
-        </tr>
-    </table>
+    <header>
+        <h1>Tabelas</h1>
+    </header>
 
-    <table class="especial">
-        <caption>Boletim</caption>
-        <thead>
-            <th>Aluno</th>
-            <th>Nota</th>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Ana</td>
-                <td>8</td>
-            </tr>
-            <tr>
-                <td>Dimi</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>Gustavo</td>
-                <td>10</td>
-            </tr>
-            <tr>
-                <td>Laís</td>
-                <td>7</td>
-            </tr>
-            <tr>
-                <td>Rodrigo</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>Samira</td>
-                <td>6</td>
-            </tr>
-            <tr>
-                <td>Vinícius</td>
-                <td>8</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <th>Média</th>
-            <th>7,2</th>
-        </tfoot>
-    </table>
+    <nav>
+        <ul>
+            <li><a href="../../exercicios.html"><i class="fa-solid fa-arrow-left"></i> Exercícios</a></li>
+            <li><a href="https://github.com/DimiEmerick/curso-html-css/tree/main/exercicios/modulo-3/exercicio-19" target="_blank"><i class="fa-solid fa-code"></i> Código</a></li>
+        </ul>
+    </nav>
 
-    <table>
-            <tr>
-                <td>A</td>
-                <td colspan="2" style="background-color: darkgray;">B</td>
-            </tr>
-            <tr>
-                <td rowspan="2" style="background-color: darkgray;">C</td>
-                <td>D</td>
-                <td>E</td>
-            </tr>
-            <tr>
-                <td>F</td>
-                <td>G</td>
-            </tr>
-    </table>
+    <main>
+        <article>
+            <h2>Tabelas Simples</h2>
+
+            <p>Tabelas são um recurso muito importante para a organização dados no geral, em <abbr title="HyperText Markup Language">HTML</abbr> para criar uma tabela usa-se a <strong>tag</strong> <code>table</code> e, dentro dela, algumas tags de definição de conteúdo, tais como:
+            </p>
+
+            <ul>
+                <li><code>tr</code> (Table Row) - Linha da tabela</li>
+                <li><code>th</code> (Table Header) - Cabeçalho da tabela</li>
+                <li><code>td</code> (Table Data) - Dado da tabela</li>
+            </ul>
+
+            <p>Uma tabela simples tem geralmente esta aparência:</p>
+
+            <table>
+                <tr>
+                    <th>Código</th>
+                    <th>Nomes</th>
+                    <th>Dados</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Alfredo</td>
+                    <td>Dado 1</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Guilherme</td>
+                    <td>Dado 2</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Larissa</td>
+                    <td>Dado 3</td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <h2>Anatomia de Tabelas</h2>
+            
+            <p>Essa anatomia é utilizada para tabelas grandes e melhora o resultado em <strong>sites de busca</strong>, consiste em adicionar os seguintes elementos na tabela:</p>
+
+            <ul>
+                <li><code>caption</code> - Legenda/Descrição</li>
+                <li><code>thead</code> - Cabeçalho</li>
+                <li><code>tbody</code> - Corpo</li>
+                <li><code>tfoot</code> -  Rodapé</li>
+            </ul>
+            
+            <p>Todos esses elementos podem conter seus próprios <code>tr</code>, <code>td</code> e <code>th</code> (menos o <code>caption</code>).</p>
+
+            <p>Independente da ordem que você colocar as tags de anatomia, o navegador <strong>sempre</strong> vai organizar na ordem correta.</p>
+
+            <h3>Scope</h3>
+
+            <p>É um atributo de um <code>th</code> que indica para qual direção o título está mostrando os dados, pode ter os valores:</p>
+
+                <ul>
+                    <li><code>row</code> - Dados em linha</li>
+                    <li><code>col</code> - Dados em coluna</li>
+                    <li><code>colgroup</code> - Dados num conjunto de colunas (para células mescladas)</li>
+                    <li><code>rowgroup</code> - Dados num conjunto de linhas (para células mescladas)</li>
+                </ul>
+
+            <p>Obs.: Esse atributo é extremamente útil para ajudar o site a ser relevante em <strong>sites de busca</strong>.</p>
+
+            <p>Um exemplo de uma tabela utilizando todos os atributos da anatomia citada a cima pode ser visto a seguir:</p>
+
+            <table class="especial">
+                <caption>Boletim</caption>
+                <thead>
+                    <th scope="col">Aluno</th>
+                    <th scope="col">Nota</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Dimi</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Gustavo</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Laís</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Rodrigo</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Samira</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Vinícius</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th scope="row">Média</th>
+                    <th>7,2</th>
+                </tfoot>
+            </table>
+
+            <hr>
+
+            <h2>Mesclagem de Células</h2>
+
+            <p>Mesclar células em uma tabela é algo bem comum e importante, em <abbr title="HyperText Markup Language">HTML</abbr> é necessário colocar os seguintes atributos nas tags <code>th</code> ou <code>td</code>:</p>
+
+            <ul>
+                <li><code>colspan</code> - Mesclagem em coluna.</li>
+                <li><code>rowspan</code> - Mesclagem em linha.</li>
+            </ul>
+
+            <p>Depois, adiciona-se o valor que representa o número de células que ela irá ocupar. Um exemplo pode ser visto a seguir:</p>
+
+            <table>
+                    <tr>
+                        <td>A</td>
+                        <td colspan="2" style="background-color: darkgray;">B</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" style="background-color: darkgray;">C</td>
+                        <td>D</td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>G</td>
+                    </tr>
+            </table>
+
+            <p>Enfim, esse foi todo o meu aprendizado nesse curso sobre a criação e uso das <strong>tabelas</strong> em HTML5, com algumas estilizações em CSS3.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Exercício 19 do <span>Módulo 3: &#x1F9F7;  Versionamento</span>, do Curso de HTML5 e CSS3 do <a href="https://www.cursoemvideo.com" target="_blank" rel="noopener noreferrer nofollow">CursoemVideo</a>, feito por <a href="https://github.com/DimiEmerick" target="_blank" rel="noopener noreferrer nofollow">Dimitrios Emerick</a>.</p>
+    </footer>
 </body>
 </html>

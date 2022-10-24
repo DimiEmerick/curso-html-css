@@ -146,7 +146,7 @@
 
             <p>Depois, adiciona-se o valor que representa o número de células que ela irá ocupar. Um exemplo pode ser visto a seguir:</p>
 
-            <table>
+            <table class="mesc">
                     <tr>
                         <td>A</td>
                         <td colspan="2" style="background-color: darkgray;">B</td>
@@ -162,7 +162,202 @@
                     </tr>
             </table>
 
+            <hr>
+
+            <h2>Estilização de Colunas</h2>
+
+            <p>Para especificar uma coluna em uma tabela HTML, usa-se a tag <code>colgroup</code>, ela é uma tag que define as <strong>colunas</strong> em uma tabela, cada coluna é representada por uma tag <code>col</code> que fica dentro de <code>colgroup</code>, isso facilita na hora de estilizar colunas com CSS.</p>
+
+            <p>A tag <code>col</code> possui o <strong>parâmetro</strong> <code>span</code> que especifica quantas colunas uma mesma tag <code>col</code> pode representar.</p>
+
+            <p>Um exemplo de tabela com colunas estilizadas:</p>
+
+            <table>
+                <colgroup>
+                    <col class="col1">
+                    <col class="col2" span="2">
+                    <col class="col1">
+                </colgroup>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                    <th>Profissão</th>
+                </tr>
+                <tr>
+                    <td>Ana Maria</td>
+                    <td>F</td>
+                    <td>25</td>
+                    <td>Jornalista</td>
+                </tr>
+                <tr>
+                    <td>Claudio</td>
+                    <td>M</td>
+                    <td>28</td>
+                    <td>Programador</td>
+                </tr>
+                <tr>
+                    <td>Gustavo</td>
+                    <td>M</td>
+                    <td>42</td>
+                    <td>Professor</td>
+                </tr>
+                <tr>
+                    <td>Heitor</td>
+                    <td>M</td>
+                    <td>19</td>
+                    <td>Vendedor</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>F</td>
+                    <td>39</td>
+                    <td>Médica</td>
+                </tr>
+                <tr>
+                    <td>Otávio</td>
+                    <td>M</td>
+                    <td>22</td>
+                    <td>Nutricionista</td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <h2>Responsividade</h2>
+
+            <p>Por útlimo, também é possível deixar uma tabela larga <strong>responsiva</strong> colocando-a dentro de uma <code>div</code> e usando a propriedade CSS <code>overflow-x</code>.</p>
+
+            <div class="container">
+                <table class="especial">
+                    <tr>
+                        <th>Produto</th>
+                        <th>Jan</th>
+                        <th>Fev</th>
+                        <th>Mar</th>
+                        <th>Abr</th>
+                        <th>Mai</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Ago</th>
+                        <th>Set</th>
+                        <th>Out</th>
+                        <th>Nov</th>
+                        <th>Dez</th>
+                    </tr>
+                    <tr>
+                        <td>TV 40"</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Home Theater</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Samsung Galaxy S20</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>iPad Mini</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>PlayStation 5</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Lava Louças</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>04</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>02</td>
+                    </tr>
+                    <tr>
+                        <td>Amazon Echo</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+
             <p>Enfim, esse foi todo o meu aprendizado nesse curso sobre a criação e uso das <strong>tabelas</strong> em HTML5, com algumas estilizações em CSS3.</p>
+
+            <p>Acesse <a href="../../../desafios/modulo-3/desafio-12-tabelas/d12.html">aqui</a> o <strong>desafio</strong> referente à esse exercício.</p>
         </article>
     </main>
 

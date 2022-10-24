@@ -112,14 +112,29 @@ article hr {
     border: 1px solid var(--corA3);
     margin: 20px 10px;
 }
+article a {
+    background-color: #AB1D13;
+
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.25);
+    transition-duration: .1s;
+}
+article a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+article a:hover {
+    background-color: #E04343;
+}
+
 
 
 /*  TABELAS  */
 table {
     position: relative;
     text-align: center;
-    width: 200px;
-    height: 100px;
     margin: 1.25em auto;
     border-collapse: collapse;
 }
@@ -132,17 +147,32 @@ table.especial thead > tr > th, tfoot {
     top: 0;
     background-color: darkgray;
 }
-table.especial tbody > tr:nth-child(even) {
+table.especial tbody > tr:nth-child(odd) {
     background-color: lightgray;
 }
 th {
     background-color: darkgray;
+    padding: 10px 5px;
     border: 1px solid black;
 }
 td {
+    padding: 10px 20px;
     border: 1px solid black;
 }
-
+.mesc {
+    width: 150px;
+    height: 150px;
+}
+.col1 {
+    background-color: var(--corA4);
+}
+.col2 {
+    background-color: var(--corB1);
+}
+.container {
+    overflow-x: scroll;
+    margin: 10px;
+}
 
 /*  RODAPÉ  */
 footer {
@@ -166,7 +196,7 @@ footer a:hover {
 
 
 /*  TESTANDO DEGRADÊ EM TEXTOS  */
-span {
+footer span {
     /* Primeiro passo: definir um degradê como fundo */
     background-image: linear-gradient(180deg, #f88847, #ee6312);
     

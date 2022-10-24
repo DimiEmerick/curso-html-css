@@ -24,3 +24,4 @@ ___
 Grande parte do aprendizado deste módulo foi feito usando o [Github](https://github.com), logo, os poucos exercícios e desafios apresentados são apenas **aprofundamentos** das linguagens.
 * Versionamento (Git, GitHub, commit, push, pull, clone, issues, GitHub Pages)
 * Background (parâmetros de imagens de fundo)
+* Tabelas (criação, estilização, anatomia, mesclagem)

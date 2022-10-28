@@ -193,6 +193,11 @@ section.lista p {
     background-image: linear-gradient(180deg, #f88847, #ee6312);
 }
 
+#form {
+    background-image: url(../Imagens/env.jpg);
+    background-size: cover;
+}
+
 /* RODAPÉ */
 footer {
     background-color: var(--corA3);

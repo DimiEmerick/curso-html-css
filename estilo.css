@@ -225,11 +225,12 @@ footer {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        padding: 15px;
         margin: auto;
     }
 
     article {
-        min-width: 0;
+        min-width: 100px;
         max-width: 400px;
         margin-bottom: 50px;
     }
@@ -250,4 +251,16 @@ footer {
        margin: 5px 0;
     }
 
+}
+
+@media(max-width:356px) {
+    h1 {
+        font-size: .60em;
+    }
+    img {
+        width: 200px;
+    }
+    .acesso {
+        padding: 5px;
+    }
 }

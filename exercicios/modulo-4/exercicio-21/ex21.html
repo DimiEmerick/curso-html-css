@@ -10,12 +10,37 @@
 <body>
     <h1>Formulários</h1>
 
-    <form action="cadastro.php" autocomplete="off">
-        <p><label for="inome">Nome:</label>
-            <input type="text" name="nome" id="inome"></p>
-        <p><label for="isobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="isobrenome"></p>
-        <p><input type="submit" value="Enviar"></p>
-    </form>
+    <p>Formulários são métodos de enviar dados ou ações/comandos para o site, aplicação ou navegador. Em HTML5 se usam os denominados <code>inputs</code> para enviar tais dados de formas diferentes.</p>
+
+    <div>
+        <p>Exemplo de formulário:</p>
+        <form action="cadastro.php" autocomplete="off">
+            <p><label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome"></p>
+            <p><label for="iCPF">CPF:</label>
+                <input inputmode="numeric" name="CPF" id="iCPF"></p>
+            <p><input type="submit" value="Enviar"></p>
+        </form>
+    </div>
+
+    <h2>Label</h2>
+
+    O <code>label</code> é uma <code>tag</code> usada para mesclar outras <code>tags</code> ao <code>input</code>, com o intuito de criar uma relação entre elas e melhorar a experiência do usuário. Por exemplo, ao clicar na palavra <strong>"Username"</strong>, o foco é redirecionado ao <code>input</code> de texto para inserir o nome de usuário. Isso pode ser usado com textos, imagens, <code>divs</code> e muitas outras <code>tags</code>.
+
+    <p><label for="iusername">Username:</label>
+        <input type="text" name="username" id="iusername"></p>
+
+    <h2>Inputs</h2>
+
+    <p>Ao todo, existem 22 tipos de <code>inputs</code>, divididos em categorias, todos descritos a seguir.</p>
+
+    <h3>Inputs de Texto</h3>
+
+
+    <h2>Métodos</h2>
+
+    Método GET: Cria uma sequência de consulta (<em>query string</em>) e a acrescenta à <strong>URL</strong> do <em>script</em> no servidor que manipula a solicitação. 
+    POST: Cria um par nome/valor que são passados no <strong>corpo</strong> da mensagem de pedido HTTP.
+
 </body>
 </html>

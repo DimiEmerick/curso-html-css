@@ -14,12 +14,19 @@
 
     <div>
         <p>Exemplo de formulário:</p>
-        <form action="cadastro.php" autocomplete="off">
-            <p><label for="inome">Nome:</label>
-                <input type="text" name="nome" id="inome"></p>
-            <p><label for="iCPF">CPF:</label>
-                <input inputmode="numeric" name="CPF" id="iCPF"></p>
-            <p><input type="submit" value="Enviar"></p>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <p>
+                <label for="iusu">Usuário</label>
+                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="11" placeholder="Nome de Usuário" autocomplete="username">
+            </p>
+            <p>
+                <label for="isen">Senha:</label>
+                <input type="password" name="sen" id="isen" required minlength="8" size="13" placeholder="Mínimo 8 caracteres" autocomplete="current-password">
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
         </form>
     </div>
 
@@ -32,15 +39,87 @@
 
     <h2>Inputs</h2>
 
-    <p>Ao todo, existem 22 tipos de <code>inputs</code>, divididos em categorias, todos descritos a seguir.</p>
+    <p>Em suma, os 10 principais tipos de <code>inputs</code> estão descritos a seguir, divididos em categorias.</p>
 
     <h3>Inputs de Texto</h3>
 
+    <h4>Text</h4>
+    
+    <p>Como o nome já diz, é usado para escrever textos, mas seu uso mais comum é para campos de preenchimento de informações como Nome de Usuário, Cargo, Nome da Empresa, Endereço, etc.</p>
+
+    <input type="text" name="texto1" id="itexto1" placeholder="Nome">
+
+    <h4>Password</h4>
+    
+    <p>Tem o mesmo princípio que o <code>input</code> de texto, porém com foco para escrever senhas, o navegador além de identificar o campo como uma senha de validação, também esconde automaticamente os caracteres que são preenchidos no campo.</p>
+
+    <input type="password" name="senha1" id="isenha1" placeholder="Senha">
+
+    <h3>Inputs de Número</h3>
+
+    <h4>Number</h4>
+    
+    <p>É usado para inserir números, seus principais usos são informações como CPF, CEP, Carteira de Trabalho, etc.</p>
+
+    <input type="number" name="numero1" id="inumero1">
+
+    <h4>Date</h4>
+    
+    <p>Bem objetivo, serve para a inserção exclusiva de datas, incluindo dia, mês e ano.</p>
+
+    <input type="date" name="data1" id="idata1">
+    
+    <h4>Datetime-Local</h4>
+    
+    <p>Também usado exclusivamente para a inserção de datas, porém inclui o horário.</p>
+
+    <input type="datetime-local" name="hora1" id="ihora1">
+
+    <h3>Inputs de Botão</h3>
+
+    <h4>Button</h4>
+    
+    <p></p>
+
+    <h4>Submit</h4>
+    
+    <p></p>
+
+    <h4>Reset</h4>
+    
+    <p></p>
+
+    <h3>Inputs de Marcação</h3>
+
+    <h4>Checkbox</h4>
+    
+    <p></p>
+
+    <h4>Radio</h4>
+    
+    <p></p>
+
+    <h3>Atributos</h3>
+
+    <p>Atributos são algumas características que podem ser implementadas nos <code>inputs</code>, com o intuito de ajudar o usuário em sua interação. A seguir são listados alguns dos principais atributos:</p>
+
+    <ul>
+        <li><code>required</code>: Define o <code>input</code> como de preenchimento obrigatório no formulário.</li>
+        <li><code>minlength</code>: Define o número mínimo de caracteres no input.</li>
+        <li><code>maxlength</code>: Define o número máximo de caracteres no input.</li>
+        <li><code>size</code>: Define o tamanho visual do input.</li>
+        <li><code>placeholder</code>: Usado para descrever o que deve ser inserido no input.</li>
+        <li><code>autocomplete</code>: Ajuda o navegador a autocompletar o campo com uma definição de que informação deve ser preenchida.</li>
+    </ul>
 
     <h2>Métodos</h2>
 
-    Método GET: Cria uma sequência de consulta (<em>query string</em>) e a acrescenta à <strong>URL</strong> do <em>script</em> no servidor que manipula a solicitação. 
-    POST: Cria um par nome/valor que são passados no <strong>corpo</strong> da mensagem de pedido HTTP.
+    <p>Método é o modo como o formulário envia as informações para o banco de dados. Em HTML5 existem duas formas:</p>
+
+    <ul>
+        <li><strong>GET:</strong> Cria uma sequência de consulta (<em>query string</em>) e a acrescenta à <strong>URL</strong> do <em>script</em> no servidor que manipula a solicitação.</li>
+        <li><strong>POST:</strong> Cria um par nome/valor que são passados no <strong>corpo</strong> da mensagem de pedido HTTP.</li>
+    </ul>
 
 </body>
 </html>

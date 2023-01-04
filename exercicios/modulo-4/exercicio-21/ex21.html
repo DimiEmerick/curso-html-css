@@ -61,7 +61,7 @@
     
     <p>É usado para inserir números, seus principais usos são informações como CPF, CEP, Carteira de Trabalho, etc.</p>
 
-    <input type="number" name="numero1" id="inumero1">
+    <input type="number" name="numero1" id="inumero1" min="0" max="10" step="0.5">
 
     <h4>Date</h4>
     
@@ -71,7 +71,7 @@
     
     <h4>Datetime-Local</h4>
     
-    <p>Também usado exclusivamente para a inserção de datas, porém inclui o horário.</p>
+    <p>Também usado exclusivamente para a inserção de datas, porém inclui o horário. Existem outros tipos de inputs de data mais específicos, como datetime (tempo por extenso), month (mês) e week (semana).</p>
 
     <input type="datetime-local" name="hora1" id="ihora1">
 
@@ -110,6 +110,10 @@
         <li><code>size</code>: Define o tamanho visual do input.</li>
         <li><code>placeholder</code>: Usado para descrever o que deve ser inserido no input.</li>
         <li><code>autocomplete</code>: Ajuda o navegador a autocompletar o campo com uma definição de que informação deve ser preenchida.</li>
+        <li><code>min</code>: </li>
+        <li><code>max</code>: </li>
+        <li><code>step</code>: </li>
+        <li><code>value</code>: </li>
     </ul>
 
     <h2>Métodos</h2>

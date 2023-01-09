@@ -13,21 +13,23 @@
     <p>Formulários são métodos de enviar dados ou ações/comandos para o site, aplicação ou navegador. Em HTML5 se usam os denominados <code>inputs</code> para enviar tais dados de formas diferentes.</p>
 
     <div>
-        <p>Exemplo de formulário:</p>
         <form action="cadastro.php" method="post" autocomplete="on">
-            <p>
-                <label for="iusu">Usuário</label>
-                <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="11" placeholder="Nome de Usuário" autocomplete="username">
-            </p>
-            <p>
-                <label for="isen">Senha:</label>
-                <input type="password" name="sen" id="isen" required minlength="8" size="13" placeholder="Mínimo 8 caracteres" autocomplete="current-password">
-            </p>
-            <p>
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpar">
-            </p>
-        </form>
+            <fieldset>
+                <legend>Exemplo de formulário</legend>
+                <p>
+                    <label for="iusu">Usuário</label>
+                    <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="11" placeholder="Nome de Usuário" autocomplete="username">
+                </p>
+                <p>
+                    <label for="isen">Senha:</label>
+                    <input type="password" name="sen" id="isen" required minlength="8" size="13" placeholder="Mínimo 8 caracteres" autocomplete="current-password">
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+        </form>  
     </div>
 
     <hr>
@@ -43,7 +45,7 @@
 
     <h2>Inputs</h2>
 
-    <p>Em suma, os 10 principais tipos de <code>inputs</code> estão descritos a seguir, divididos em categorias.</p>
+    <p>Em suma, os principais tipos de <code>inputs</code> estão descritos a seguir, divididos em categorias.</p>
 
     <hr>
 
@@ -60,6 +62,12 @@
         <p>Tem o mesmo princípio que o <code>input</code> de texto, porém com foco para escrever senhas, o navegador além de identificar o campo como uma senha de validação, também esconde automaticamente os caracteres que são preenchidos no campo.</p>
 
         <input type="password" name="senha1" id="isenha1" placeholder="Senha">
+
+        <h4>E-mail</h4>
+
+        <p>Inserção de e-mail. Por padrão não tem muita validação, pode-se fazer uso de expressões regulares para melhorar seu uso.</p>
+
+        <input type="email" name="email" id="iemail">
 
     <hr>
 
@@ -82,6 +90,14 @@
         <p>Também usado exclusivamente para a inserção de datas, porém inclui o horário. Existem outros tipos de inputs de data mais específicos, como <code>time</code> (hora), <code>month</code> (mês) e <code>week</code> (semana).</p>
 
         <input type="datetime-local" name="hora1" id="ihora1">
+
+        <h4>Telefone</h4>
+
+        <p>Usado exclusivamente para inserir dados de número de telefone, seja fixo, celular ou afins. Por padrão não tem muita validação, então é preciso fazer uso de expressões regulares para definir uma numeração válida. O exemplo a seguir exige que o número contenha o DDD entre parênteses () e um traço (-) antes dos últimos 4 dígitos.</p>
+
+        <form action="telefone.php">
+            <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx"> <input type="submit" value="Enviar">
+        </form>
 
     <hr>
 
@@ -117,11 +133,23 @@
 
         <h4>Checkbox</h4>
         
-        <p></p>
+        <p>Botões de marcar e desmarcar, útil para formulários que peçam mais de uma alternativa por questão.</p>
+
+        <input type="checkbox" name="html" id="ihtml"> 
+        <label for="ihtml">HTML</label> <br>
+        <input type="checkbox" name="css" id="icss"> 
+        <label for="icss">CSS</label> <br>
+        <input type="checkbox" name="js" id="ijs"> 
+        <label for="ijs">JavaScript</label>
 
         <h4>Radio</h4>
         
-        <p></p>
+        <p>Botões de marcar, útil para escolher apenas uma alternativa. É preciso que esses botões tenham o mesmo <code>name</code> para representarem que são da mesma questão e assim serem usados corretamente.</p>
+
+        <input type="radio" name="sex" id="imas">
+        <label for="imas">Masculino</label> <br>
+        <input type="radio" name="sex" id="ifem">
+        <label for="ifem">Feminino</label> <br>
 
     <hr>
 
@@ -140,6 +168,7 @@
         <li><code>max</code>: Número máximo em um <code>input</code> de número.</li>
         <li><code>step</code>: Contagem de "passos" que um número pode pular em um <code>input</code> de número.</li>
         <li><code>value</code>: Valor padrão do <code>input</code>, que já é inserido assim que a página é carregada.</li>
+        <li><code>pattern</code>: Cria um padrão de preenchimento do <code>input</code> através de expressões regulares.</li>
     </ul>
 
     <hr>

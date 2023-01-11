@@ -49,127 +49,197 @@
 
     <hr>
 
-    <h3>Inputs de Texto</h3>
+        <h3>Inputs de Texto</h3>
 
-        <h4>Text</h4>
-        
-        <p>Como o nome já diz, é usado para escrever textos, mas seu uso mais comum é para campos de preenchimento de informações como Nome de Usuário, Cargo, Nome da Empresa, Endereço, etc.</p>
+            <h4>Text</h4>
+            
+            <p>Como o nome já diz, é usado para escrever textos, mas seu uso mais comum é para campos de preenchimento de informações como Nome de Usuário, Cargo, Nome da Empresa, Endereço, etc.</p>
 
-        <input type="text" name="texto1" id="itexto1" placeholder="Nome">
+            <input type="text" name="texto1" id="itexto1" placeholder="Nome">
 
-        <h4>Password</h4>
-        
-        <p>Tem o mesmo princípio que o <code>input</code> de texto, porém com foco para escrever senhas, o navegador além de identificar o campo como uma senha de validação, também esconde automaticamente os caracteres que são preenchidos no campo.</p>
+            <h4>Password</h4>
+            
+            <p>Tem o mesmo princípio que o <code>input</code> de texto, porém com foco para escrever senhas, o navegador além de identificar o campo como uma senha de validação, também esconde automaticamente os caracteres que são preenchidos no campo.</p>
 
-        <input type="password" name="senha1" id="isenha1" placeholder="Senha">
+            <input type="password" name="senha1" id="isenha1" placeholder="Senha">
 
-        <h4>E-mail</h4>
+            <h4>E-mail</h4>
 
-        <p>Inserção de e-mail. Por padrão não tem muita validação, pode-se fazer uso de expressões regulares para melhorar seu uso.</p>
+            <p>Inserção de e-mail. Por padrão não tem muita validação, pode-se fazer uso de expressões regulares para melhorar seu uso.</p>
 
-        <input type="email" name="email" id="iemail">
-
-    <hr>
-
-    <h3>Inputs de Número</h3>
-
-        <h4>Number</h4>
-        
-        <p>É usado para inserir números, seus principais usos são informações como CPF, CEP, Carteira de Trabalho, etc.</p>
-
-        <input type="number" name="numero1" id="inumero1" min="0" max="10" step="0.5">
-
-        <h4>Date</h4>
-        
-        <p>Bem objetivo, serve para a inserção exclusiva de datas, incluindo dia, mês e ano.</p>
-
-        <input type="date" name="data1" id="idata1">
-        
-        <h4>Datetime-Local</h4>
-        
-        <p>Também usado exclusivamente para a inserção de datas, porém inclui o horário. Existem outros tipos de inputs de data mais específicos, como <code>time</code> (hora), <code>month</code> (mês) e <code>week</code> (semana).</p>
-
-        <input type="datetime-local" name="hora1" id="ihora1">
-
-        <h4>Telefone</h4>
-
-        <p>Usado exclusivamente para inserir dados de número de telefone, seja fixo, celular ou afins. Por padrão não tem muita validação, então é preciso fazer uso de expressões regulares para definir uma numeração válida. O exemplo a seguir exige que o número contenha o DDD entre parênteses () e um traço (-) antes dos últimos 4 dígitos.</p>
-
-        <form action="telefone.php">
-            <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx"> <input type="submit" value="Enviar">
-        </form>
+            <input type="email" name="email" id="iemail">
 
     <hr>
 
-    <h3>Inputs de Botão</h3>
+        <h3>Inputs de Número</h3>
 
-        <h4>Button</h4>
+            <h4>Number</h4>
+            
+            <p>É usado para inserir números, seus principais usos são informações como CPF, CEP, Carteira de Trabalho, etc.</p>
 
-        <p>Um botão simples, não possui uso por si próprio então precisa que um <code>script</code> defina o que o botão fará.</p>
+            <input type="number" name="numero1" id="inumero1" min="0" max="10" step="0.5">
 
-        <input type="button" value="Botão">
+            <h4>Date</h4>
+            
+            <p>Bem objetivo, serve para a inserção exclusiva de datas, incluindo dia, mês e ano.</p>
 
-        <h4>Submit</h4>
-        
-        <p>Botão com o intuito de enviar as informações do formulário para o receptor, geralmente um banco de dados.</p>
-        
-        <form action="cadastro.php">
-            <input type="text" name="sub" id="isub">
-            <input type="submit" value="Enviar">
-        </form>
+            <input type="date" name="data1" id="idata1">
+            
+            <h4>Datetime-Local</h4>
+            
+            <p>Também usado exclusivamente para a inserção de datas, porém inclui o horário. Existem outros tipos de inputs de data mais específicos, como <code>time</code> (hora), <code>month</code> (mês) e <code>week</code> (semana).</p>
 
-        <h4>Reset</h4>
-        
-        <p>Botão que apaga as informações preenchidas no formulário.</p>
+            <input type="datetime-local" name="hora1" id="ihora1">
 
-        <form action="cadastro.php">
-            <input type="text" name="res" id="ires">
-            <input type="reset" value="Limpar">
-        </form>
+            <h4>Telefone</h4>
 
-    <hr>
+            <p>Usado exclusivamente para inserir dados de número de telefone, seja fixo, celular ou afins. Por padrão não tem muita validação, então é preciso fazer uso de expressões regulares para definir uma numeração válida. O exemplo a seguir exige que o número contenha o DDD entre parênteses () e um traço (-) antes dos últimos 4 dígitos.</p>
 
-    <h3>Inputs de Marcação</h3>
-
-        <h4>Checkbox</h4>
-        
-        <p>Botões de marcar e desmarcar, útil para formulários que peçam mais de uma alternativa por questão.</p>
-
-        <input type="checkbox" name="html" id="ihtml"> 
-        <label for="ihtml">HTML</label> <br>
-        <input type="checkbox" name="css" id="icss"> 
-        <label for="icss">CSS</label> <br>
-        <input type="checkbox" name="js" id="ijs"> 
-        <label for="ijs">JavaScript</label>
-
-        <h4>Radio</h4>
-        
-        <p>Botões de marcar, útil para escolher apenas uma alternativa. É preciso que esses botões tenham o mesmo <code>name</code> para representarem que são da mesma questão e assim serem usados corretamente.</p>
-
-        <input type="radio" name="sex" id="imas">
-        <label for="imas">Masculino</label> <br>
-        <input type="radio" name="sex" id="ifem">
-        <label for="ifem">Feminino</label> <br>
+            <form action="telefone.php">
+                <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" placeholder="(xx)xxxx-xxxx"> <input type="submit" value="Enviar">
+            </form>
 
     <hr>
 
-    <h3>Atributos</h3>
+        <h3>Inputs de Botão</h3>
 
-    <p>Atributos são algumas características que podem ser implementadas nos <code>inputs</code>, com o intuito de ajudar o usuário em sua interação. A seguir são listados alguns dos principais atributos:</p>
+            <h4>Button</h4>
 
-    <ul>
-        <li><code>required</code>: Define o <code>input</code> como de preenchimento obrigatório no formulário.</li>
-        <li><code>minlength</code>: Define o número mínimo de caracteres no input.</li>
-        <li><code>maxlength</code>: Define o número máximo de caracteres no input.</li>
-        <li><code>size</code>: Define o tamanho visual do input.</li>
-        <li><code>placeholder</code>: Texto com pouca opacidade que aparecerá no campo de texto do <code>input</code>, geralmente para dar informações adicionais do que deve ser preenchido.</li>
-        <li><code>autocomplete</code>: Ajuda o navegador a autocompletar o campo com uma definição de que informação deve ser preenchida.</li>
-        <li><code>min</code>: Número mínimo em um <code>input</code> de número.</li>
-        <li><code>max</code>: Número máximo em um <code>input</code> de número.</li>
-        <li><code>step</code>: Contagem de "passos" que um número pode pular em um <code>input</code> de número.</li>
-        <li><code>value</code>: Valor padrão do <code>input</code>, que já é inserido assim que a página é carregada.</li>
-        <li><code>pattern</code>: Cria um padrão de preenchimento do <code>input</code> através de expressões regulares.</li>
-    </ul>
+            <p>Um botão simples, não possui uso por si próprio então precisa que um <code>script</code> defina o que o botão fará.</p>
+
+            <input type="button" value="Botão">
+
+            <h4>Submit</h4>
+            
+            <p>Botão com o intuito de enviar as informações do formulário para o receptor, geralmente um banco de dados.</p>
+            
+            <form action="cadastro.php">
+                <input type="text" name="sub" id="isub">
+                <input type="submit" value="Enviar">
+            </form>
+
+            <h4>Reset</h4>
+            
+            <p>Botão que apaga as informações preenchidas no formulário.</p>
+
+            <form action="cadastro.php">
+                <input type="text" name="res" id="ires">
+                <input type="reset" value="Limpar">
+            </form>
+
+    <hr>
+
+        <h3>Inputs de Marcação</h3>
+
+            <h4>Checkbox</h4>
+            
+            <p>Botões de marcar e desmarcar, útil para formulários que peçam mais de uma alternativa por questão.</p>
+
+            <input type="checkbox" name="html" id="ihtml"> 
+            <label for="ihtml">HTML</label> <br>
+            <input type="checkbox" name="css" id="icss"> 
+            <label for="icss">CSS</label> <br>
+            <input type="checkbox" name="js" id="ijs"> 
+            <label for="ijs">JavaScript</label>
+
+            <h4>Radio</h4>
+            
+            <p>Botões de marcar, útil para escolher apenas uma alternativa. É preciso que esses botões tenham o mesmo <code>name</code> para representarem que são da mesma questão e assim serem usados corretamente.</p>
+
+            <input type="radio" name="sex" id="imas">
+            <label for="imas">Masculino</label> <br>
+            <input type="radio" name="sex" id="ifem">
+            <label for="ifem">Feminino</label> <br>
+
+    <hr>
+
+        <h3>Inputs Específicos</h3>
+
+            <h4>Color</h4>
+
+            <p>Permite a inserção de uma cor escolhida pelo usuário.</p>
+
+            <input type="color" name="cor" id="icor">
+
+            <h4>Range</h4>
+
+            <p>Altamente usado em sites que possuem algum nível de satisfação do cliente. Usado para definir um valor dentre o mínimo e o máximo permitido (que pode ser alterado).</p>
+
+            <input type="range" name="nivel" id="inivel" min="1" max="10">
+
+            <h4>File</h4>
+
+            <p>Permite o usuário enviar arquivos de qualquer tipo e formato para o site.</p>
+
+            <input type="file" name="arquivo" id="iarquivo">
+
+    <hr>
+
+        <h3>Atributos</h3>
+
+        <p>Atributos são algumas características que podem ser implementadas nos <code>inputs</code>, com o intuito de ajudar o usuário em sua interação. A seguir são listados alguns dos principais atributos:</p>
+
+        <ul>
+            <li><code>required</code>: Define o <code>input</code> como de preenchimento obrigatório no formulário.</li>
+            <li><code>minlength</code>: Define o número mínimo de caracteres no input.</li>
+            <li><code>maxlength</code>: Define o número máximo de caracteres no input.</li>
+            <li><code>size</code>: Define o tamanho visual do input.</li>
+            <li><code>placeholder</code>: Texto com pouca opacidade que aparecerá no campo de texto do <code>input</code>, geralmente para dar informações adicionais do que deve ser preenchido.</li>
+            <li><code>autocomplete</code>: Ajuda o navegador a autocompletar o campo com uma definição de que informação deve ser preenchida.</li>
+            <li><code>min</code>: Número mínimo em um <code>input</code> de número.</li>
+            <li><code>max</code>: Número máximo em um <code>input</code> de número.</li>
+            <li><code>step</code>: Contagem de "passos" que um número pode pular em um <code>input</code> de número.</li>
+            <li><code>value</code>: Valor padrão do <code>input</code>, que já é inserido assim que a página é carregada.</li>
+            <li><code>pattern</code>: Cria um padrão de preenchimento do <code>input</code> através de expressões regulares.</li>
+        </ul>
+
+    <hr>
+
+    <h2>Inserção de Dados sem Input</h2>
+
+    <p>Existem algumas <code>tags</code> para a inserção de dados que não necessariamente são <code>inputs</code>, como os casos a seguir.</p>
+
+        <h3>Select*</h3>
+
+        <p>Uma <code>tag</code> que permite escolher uma opção dentre uma lista predefinida.</p>
+
+        <label for="iest">Estado</label>
+        <select name="est" id="iest">
+            <option value="">Selecione seu estado</option>
+            <optgroup label="Região Sudeste">
+                <option value="ES">Espírito Santo</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP">São Paulo</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+                <option value="PR">Paraná</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="SC">Santa Catarina</option>
+            </optgroup>
+        </select>
+            
+        <h3>Datalist</h3>
+
+        <p>Uma <code>tag</code> que permite escolher opções dentre uma lista, porém também é possível preencher com seus próprios dados.</p>
+
+        <label for="iprof">Profissão:</label>
+        <input type="text" name="prof" id="iprof" list="lstprof">
+        <datalist id="lstprof">
+            <option>Administrador</option>
+            <option>Desenvolvedor</option>
+            <option>Jogador</option>
+            <option>Médico</option>
+            <option>Professor</option>
+        </datalist>
+
+        <h3>Textarea*</h3>
+
+        <p>Cria uma área para inserção de texto.</p>
+
+        <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+
+        <p><strong>*</strong>: Para usar essas <code>tags</code> em um formulário, é recomendado mudar o método do mesmo para POST.</p>
 
     <hr>
 
@@ -178,8 +248,8 @@
     <p>Método é o modo como o formulário envia as informações para o banco de dados. Em HTML5 existem duas formas:</p>
 
     <ul>
-        <li><strong>GET:</strong> Cria uma sequência de consulta (<em>query string</em>) e a acrescenta à <strong>URL</strong> do <em>script</em> no servidor que manipula a solicitação.</li>
-        <li><strong>POST:</strong> Cria um par nome/valor que são passados no <strong>corpo</strong> da mensagem de pedido HTTP.</li>
+        <li><strong>GET:</strong> Cria uma sequência de consulta (<em>query string</em>) e a acrescenta à <strong>URL</strong> do <em>script</em> no servidor que manipula a solicitação. (Esse método tem um limite de 3k bytes de envio de dados)</li>
+        <li><strong>POST:</strong> Cria um par nome/valor que são passados no <strong>corpo</strong> da mensagem de pedido HTTP. (Esse método não possui limite de dados a serem enviados)</li>
     </ul>
 
 </body>

@@ -26,7 +26,7 @@ body {
     font: normal 1em var(--fonte-padrao);
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: var(--fonte-titulo);
 }
 
@@ -82,19 +82,19 @@ nav a:hover {
 
 /*  CONTEÚDO GERAL  */
 main {
-    background-image: linear-gradient(180deg, var(--corB2), var(--corA5));
+    background-image: linear-gradient(180deg, var(--corB1), var(--corB2));
     padding-bottom: 25px;
     box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
 article {
-    background-color: white;
+    background-color: aliceblue;
 
     text-align: justify;
     line-height: 1.75em;
 
     max-width: 800px;
-    padding: 10px;
+    padding: 10px 25px;
     margin: auto;
     border-radius: 0 0 7px 7px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
@@ -114,39 +114,27 @@ article hr {
     border: 1px solid var(--corA3);
     margin: 20px 10px;
 }
-article a {
-    background-color: #AB1D13;
-    color: white;
 
-    padding: 5px;
-    border-radius: 3px;
-    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.25);
-    transition-duration: .1s;
-
-    text-decoration: none;
-    font-weight: bold;
-}
-article a:hover {
-    background-color: #E04343;
-}
-
-
-
-/*  IFRAMES  */
-div {
+div.formu {
     display: flex;
     justify-content: center;
     margin: 10px 0;
 }
-iframe {
-    margin: 0 5px;
-    border-radius: 7px;
-    border: 2px solid var(--corA3);
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+
+fieldset {
+    padding: 10px 5px;
 }
-.interno {
-    max-width: 300px;
-    max-height: 150px;
+
+input {
+    padding: 2px;
+}
+
+form p {
+    padding: 5px;
+}
+
+h4 {
+    margin: 15px 0 3px 0;
 }
 
 /*  RODAPÉ  */

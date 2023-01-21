@@ -18,7 +18,7 @@
     --corB1: #238F99;
     --corB2: #0e3b3f;
 
-    --fonte-padrao: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
     --fonte-titulo: 'Roboto Slab', Times, serif;
 }
 
@@ -29,7 +29,6 @@ body {
 h1, h2, h3, h4 {
     font-family: var(--fonte-titulo);
 }
-
 
 /*  CABEÇALHO  */
 header {
@@ -47,6 +46,11 @@ h1 {
     font-size: 2.5em;
 }
 
+nav::before {
+    content: 'Este é um exemplo de Media Query, o estilo dessa página está adaptado para ser impresso.';
+    text-decoration: underline;
+    font-weight: bold;
+}
 nav {
     display: flex;
     justify-content: center;
@@ -57,7 +61,7 @@ nav {
     height: 49px;
 }
 nav li {
-    display: inline-block;
+    display: none;
 
     font-size: 1.25em;
     font-weight: bold;
@@ -65,6 +69,7 @@ nav li {
     margin: 0 15px;
 }
 nav a {
+    display: none;
     color: white;
 
     text-decoration: none;
@@ -81,23 +86,13 @@ nav a:hover {
 }
 
 /*  CONTEÚDO GERAL  */
-main {
-    background-image: linear-gradient(180deg, var(--corB1), var(--corB2));
-    padding-bottom: 25px;
-    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
-}
-
 article {
     background-color: aliceblue;
 
     text-align: justify;
     line-height: 1.75em;
 
-    max-width: 800px;
-    padding: 10px 25px;
     margin: auto;
-    border-radius: 0 0 7px 7px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
 }
 article h2, article h3 {
     margin: 10px 5px;
@@ -114,9 +109,15 @@ article hr {
     border: 1px solid var(--corA3);
     margin: 20px 10px;
 }
+article::after {
+    content: 'Esta página foi impressa do Repositório do Curso de HTML5 e CSS3 de Dimítrios Emerick.';
+    text-align: center;
+    font-weight: bold;
+}
 
 /*  RODAPÉ  */
 footer {
+    display: none;
     background-color: rgb(30, 30, 30);
     color: var(--corA4);
 
@@ -134,12 +135,13 @@ footer a:hover {
     text-decoration: underline;
 }
 footer li {
-    display: inline-block;
+    display: none;
     padding: 0 25px 0 25px;
 }
 
 /*  TESTANDO DEGRADÊ EM TEXTOS  */
 footer span {
+    display: none;
     background-image: linear-gradient(180deg, white, darkgray);
     
     /* Apagar do fundo tudo que não estiver imediatamente atrás de texto */

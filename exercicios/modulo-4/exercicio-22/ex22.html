@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
     <link rel="shortcut icon" href="../../../Imagens/favicon-env.ico" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/style.css" media="screen">
+    <link rel="stylesheet" href="estilos/print.css" media="print">
     <script src="https://kit.fontawesome.com/142432d4b9.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -23,14 +24,28 @@
 
     <main>
         <article>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, perferendis! Aliquid ullam quo earum ut iure, nobis voluptates sed aliquam nemo fugit! Ducimus quibusdam reiciendis eveniet ut. Similique, et minus.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quisquam aliquam illum magnam blanditiis? Minus error omnis ex aperiam nam, vel modi ut rem! Optio adipisci dignissimos delectus at fugit!</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam nostrum ipsa eveniet fugiat ipsum, soluta atque quos itaque quaerat deserunt illo. Odit porro suscipit nostrum consectetur ipsam totam? Omnis, in.</p>
+            <p><em>Media Query</em> é um recurso nas CSS capaz de adaptar o conteúdo de um site para diversas plataformas e tipos de telas (<em>desktop</em>, celular, impressora). É um recurso altamente usado nos dias de hoje pela necessidade que temos de consumir o conteúdo em diversos aparelhos. Tente imprimir essa página (<code>CTRL + P</code>) para ver um exemplo de <em>Media Query</em>.</p>
+
+            <p>Com as <em>Media Queries</em> é possível ajustar o tamanho, fonte e até comportamento do site em questão para o usuário ter uma melhor experiência independente da forma que esteja consumindo o conteúdo.</p>
+            
+            <hr>
+
+            <h2>Media Type</h2>
+
+            <p><em>Media Types</em> é um recurso atualmente insuficiente e quase obsoleto mas ainda pode ser usado em circunstâncias específicas. Dentro de um <code>link</code> para um estilo CSS, deve-se inserir o parâmetro <code>media</code> e especificar o seu tipo. Os tipos são descritos a seguir:</p>
+
+            <ul>
+                <li><code>all</code>: Mídia para todos os dispositivos.</li>
+                <li><code>print</code>: Mídia para impressoras ou dispositivos que reproduzem uma tela de impressão.</li>
+                <li><code>screen</code>: Mídia para todos os dispositivos que não se encaixam em '<code>print</code>'.</li>
+            </ul>
+
+            <hr>
+
+            <h2>Media Features</h2>
+
+            <p>Um recurso que define as características de uma <em>Media Query</em>. É mais específico que uma <em>Media Type</em> e pode ser usado livremente utilizando as especificações que forem necessárias.</p>
         </article>
-        <aside>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni sunt, ea, perspiciatis repellendus asperiores aliquid veniam quaerat beatae enim vitae quam necessitatibus illum blanditiis quod qui! Vitae labore ipsa temporibus.</p>
-            <img src="imagens/back-pc.jpg" alt="pc">
-        </aside>
     </main>
 
     <footer>

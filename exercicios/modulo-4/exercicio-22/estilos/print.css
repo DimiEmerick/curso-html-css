@@ -110,7 +110,7 @@ article hr {
     margin: 20px 10px;
 }
 article::after {
-    content: 'Esta página foi impressa do Repositório do Curso de HTML5 e CSS3 de Dimítrios Emerick.';
+    content: 'Este conteúdo foi impresso do Repositório do Curso de HTML5 e CSS3 de Dimítrios Emerick.';
     text-align: center;
     font-weight: bold;
 }
@@ -118,41 +118,4 @@ article::after {
 /*  RODAPÉ  */
 footer {
     display: none;
-    background-color: rgb(30, 30, 30);
-    color: var(--corA4);
-
-    text-align: center;
-
-    padding: 10px;
 }
-footer a {
-    color: var(--corA4);
-    text-decoration: none;
-    font-weight: bold;
-    transition-duration: .25s;
-}
-footer a:hover {
-    text-decoration: underline;
-}
-footer li {
-    display: none;
-    padding: 0 25px 0 25px;
-}
-
-/*  TESTANDO DEGRADÊ EM TEXTOS  */
-footer span {
-    display: none;
-    background-image: linear-gradient(180deg, white, darkgray);
-    
-    /* Apagar do fundo tudo que não estiver imediatamente atrás de texto */
-    background-clip: text;
-    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
-  
-    /* Apagar o texto, deixando apenas o fundo atrás dele */
-    -webkit-text-fill-color: transparent;
-  
-    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
-    color: black;
-    font-weight: bold;
-    
-  }

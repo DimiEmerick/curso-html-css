@@ -44,7 +44,19 @@
 
             <h2>Media Features</h2>
 
-            <p>Um recurso que define as características de uma <em>Media Query</em>. É mais específico que uma <em>Media Type</em> e pode ser usado livremente utilizando as especificações que forem necessárias.</p>
+            <p>Um recurso que define as características de uma <em>Media Query</em>. É mais específico que uma <em>Media Type</em> e pode ser usado livremente utilizando as especificações que forem necessárias. É preciso colocar as especificações entre parênteses, por exemplo:</p>
+
+            <p><code>media = "screen and <strong>(max-width: 500px)</strong>"</code></p>
+
+            <p>Neste exemplo, o estilo vai ser aplicado a uma tela que tenha no máximo 500 pixels de largura. Um exemplo mais específico pode ser visto na imagem a seguir:</p>
+
+            <section>
+                    <picture>
+                        <source media="(max-width: 750px)" src="imagens/cev-landscape.jpg" type="image/jpg">
+                        <source media="(max-width: 500px)" src="imagens/cev-portrait.jpg" type="image/jpg">
+                        <img src="imagens/back-pc.jpg" alt="Imagem Curso em Vídeo">
+                    </picture>
+            </section>
         </article>
     </main>
 

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+
 /*  CONFIGURAÇÕES GERAIS  */
 * {
     margin: 0;
@@ -29,6 +30,7 @@ body {
 h1, h2, h3, h4 {
     font-family: var(--fonte-titulo);
 }
+
 
 /*  CABEÇALHO  */
 header {
@@ -85,6 +87,7 @@ nav a:hover {
     border: 1px solid var(--corA3);
 }
 
+
 /*  CONTEÚDO GERAL  */
 article {
     background-color: aliceblue;
@@ -114,6 +117,28 @@ article::after {
     text-align: center;
     font-weight: bold;
 }
+
+figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 15px 0 15px 0;
+}
+
+figcaption {
+    font-size: 0.75em;
+    font-style: italic;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+} 
+
 
 /*  RODAPÉ  */
 footer {

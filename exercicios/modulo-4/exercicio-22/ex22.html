@@ -48,15 +48,18 @@
 
             <p><code>media = "screen and <strong>(max-width: 500px)</strong>"</code></p>
 
-            <p>Neste exemplo, o estilo vai ser aplicado a uma tela que tenha no máximo 500 pixels de largura. Um exemplo mais específico pode ser visto na imagem a seguir:</p>
+            <p>Nesse exemplo, o estilo vai ser aplicado a uma tela que tenha no máximo 500 pixels de largura. Um exemplo mais específico pode ser visto na imagem a seguir, onde se o tamanho da tela for menor do que 700 pixels, a imagem é alterada para uma melhor exibição.</p>
 
-            <section>
-                    <picture>
-                        <source media="(max-width: 750px)" src="imagens/cev-landscape.jpg" type="image/jpg">
-                        <source media="(max-width: 500px)" src="imagens/cev-portrait.jpg" type="image/jpg">
-                        <img src="imagens/back-pc.jpg" alt="Imagem Curso em Vídeo">
-                    </picture>
-            </section>
+            <figure>
+                <picture>
+                    <source media="(max-width: 700px)" srcset="imagens/cev-portrait.jpg">
+                    <source srcset="imagens/cev-landscape.jpg">
+                    <img src="imagens/cev-landscape.jpg" alt="Banner Curso em Vídeo">
+                </picture>
+                <figcaption>Banner de exibição CursoemVideo</figcaption>
+            </figure>
+
+            <p></p>
         </article>
     </main>
 

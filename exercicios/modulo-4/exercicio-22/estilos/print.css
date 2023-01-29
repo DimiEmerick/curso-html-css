@@ -144,3 +144,12 @@ img {
 footer {
     display: none;
 }
+
+
+/* MEDIAS */
+
+@media (orientation: portrait) {
+    img {
+        width: 50%;
+    }
+}

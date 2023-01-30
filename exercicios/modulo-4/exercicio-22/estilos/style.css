@@ -56,6 +56,7 @@ nav {
     background-image: linear-gradient(90deg, var(--corA3), var(--corA1), var(--corA3));
 
     height: 49px;
+    border-bottom: 1px solid black;
 }
 nav li {
     display: inline-block;

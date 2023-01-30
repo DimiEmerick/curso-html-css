@@ -61,7 +61,20 @@
                 </figure>
             </section>
 
-            <p></p>
+            <hr>
+
+            <h2>Regra at de Media Queries</h2>
+
+            <p>Para não precisar criar vários arquivos CSS para cada especificação de media, existe uma <code>at-rule</code> que pode ser colocada em um arquivo CSS com esse mesmo propósito, ela consiste em:</p>
+
+            <pre>
+                <code>
+                    @media (condições para o estilo) {
+                        /* configurações de estilos */
+                    }</code>
+            </pre>
+
+            <p>Geralmente essa regra deve ser colocada no fim das estilizações do arquivo padrão CSS do projeto, para não haver conflitos.</p>
         </article>
     </main>
 

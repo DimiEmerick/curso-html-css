@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+
+/* CONFIGURAÇÕES GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* CONFIGURAÇÕES GERAIS */
+
+body {
+    background: url(../imagens/back-phone.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
+h1 {
+    background-color: rgb(30, 30, 30);
+    color: #ca1818;
+
+    font-family: 'Roboto Slab', Times, serif;
+    text-align: center;
+
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+main {
+    background-color: rgba(240, 248, 255, 0.596);
+
+    max-width: 300px;
+    padding: 20px;
+    margin: 100px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+}
+
+div {
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+div::after {
+    content: 'Você está vendo essa página por um celular.';
+}
+
+img#phone { display: block; margin: auto; }
+img#pc { display: none; }
+img#tablet { display: none; }
+img#print { display: none; }
+img#tv { display: none; }

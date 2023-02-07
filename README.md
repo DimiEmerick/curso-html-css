@@ -25,3 +25,7 @@ Grande parte do aprendizado deste módulo foi feito usando o [Github](https://gi
 * Versionamento (Git, GitHub, commit, push, pull, clone, issues, GitHub Pages)
 * Background (parâmetros de imagens de fundo)
 * Tabelas (criação, estilização, anatomia, mesclagem)
+### Módulo 4: 📨 Formulários
+* iFrames
+* Formulários (input, output, métodos GET e POST)
+* Media Query

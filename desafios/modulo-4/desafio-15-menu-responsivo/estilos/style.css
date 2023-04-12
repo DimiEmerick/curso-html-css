@@ -32,12 +32,14 @@ h2 {
 header {
     display: flex;
     align-items: center;
-    background-image: linear-gradient(90deg, #5ACDC4, #0F9EAE);
+    background-color: rgb(30, 30, 30);
+    /*background-image: linear-gradient(90deg, #5ACDC4, #0F9EAE);*/
 
     height: 75px;
 }
 
 h1 {
+    color: aqua;
     font-family: 'Rowdies', cursive;
     font-weight: 300;
     margin: 0 0 0 25px;
@@ -47,6 +49,7 @@ h1 {
 nav {
     background-image: linear-gradient(90deg, var(--corA2), rgb(30,30,30));
     padding: 10px;
+    border-bottom: 2px solid black
 }
 nav ul {
     list-style-type: none;
@@ -84,6 +87,42 @@ article {
     border-radius: 10px;
 }
 
+#plat {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+}
+.img_plat {
+    background-size: cover;
+    background-position: center center;
+    color: gray;
+
+    border-radius: 7px;
+    padding: 40px;
+    transition-duration: .3s;
+}
+.img_plat:hover {
+    background-size: 250%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.258);
+    color: white;
+    font-size: 14pt;
+    font-weight: bold;
+}
+#ps5 {
+    background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$);
+}
+#xone {
+    background-image: url(https://images.kabum.com.br/produtos/fotos/sync_mirakl/434250/Controle-Microsoft-Wireless-Para-Xbox-One-X-Series-Preto_1677845915_gg.jpg);
+}
+#switch {
+    background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$);
+}
+#pc {
+    background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$);
+}
 
 /*  RODAPÉ  */
 footer {

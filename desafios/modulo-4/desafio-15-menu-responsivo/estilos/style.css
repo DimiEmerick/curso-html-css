@@ -54,21 +54,45 @@ nav ul {
     list-style-type: none;
 }
 nav li {
-    display: inline-block;
+    display: block;
     background-color: rgb(60, 60, 60);
     padding: 5px;
-    margin: 0 5px;
+    margin: 10px 5px;
     border-radius: 3px 3px 0 0;
     border: 1px solid transparent;
 
-    transition-duration: .2s;
+    transition: ease-in-out .2s;
 }
 nav li:hover {
+    cursor: pointer;
     border: 1px solid black;
 }
 nav a {
+    margin: 0 3vw;
     color: aliceblue;
     text-decoration: none;
+}
+
+menu {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#menuzin {
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+    display: block;
+    padding: 10px;
+
+    text-align: center;
+    border-radius: 5px;
+    transition-duration: .2s;
+}
+#menuzin:hover {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: rgb(30, 30, 30);
 }
 
 /*  CONTEÚDO  */
@@ -100,18 +124,25 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+    flex-wrap: wrap;
     padding: 5px;
 }
+
 .img_plat {
     background-size: cover;
     background-position: center center;
     color: gray;
-
     border-radius: 7px;
     padding: 35px;
     transition-duration: .3s;
+    width: 70px; 
+    height: 70px; 
+    white-space: nowrap;  /* evitar que o texto quebre de linha */
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
+
 .img_plat:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.258);
@@ -149,7 +180,7 @@ section > p {
 
 .noticias:hover {
     cursor: pointer;
-    border: 0px;
+    border: 1px solid whitesmoke;
     box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.25);
 }
 

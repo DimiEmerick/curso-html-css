@@ -33,7 +33,6 @@ header {
     display: flex;
     align-items: center;
     background-color: rgb(30, 30, 30);
-    /*background-image: linear-gradient(90deg, #5ACDC4, #0F9EAE);*/
 
     height: 75px;
 }
@@ -42,7 +41,7 @@ h1 {
     color: aqua;
     font-family: 'Rowdies', cursive;
     font-weight: 300;
-    margin: 0 0 0 25px;
+    margin: 0 0 0 10vw;
     cursor: pointer;
 }
 
@@ -87,6 +86,16 @@ article {
     border-radius: 10px;
 }
 
+h2 {
+    margin-left: 3vw;
+}
+
+section {
+    margin: 10px 0;
+}
+
+
+/*  PLATAFORMAS  */
 #plat {
     display: flex;
     align-items: center;
@@ -100,15 +109,14 @@ article {
     color: gray;
 
     border-radius: 7px;
-    padding: 40px;
+    padding: 35px;
     transition-duration: .3s;
 }
 .img_plat:hover {
-    background-size: 250%;
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.258);
     color: white;
-    font-size: 14pt;
+    transform: scale(1.05);
     font-weight: bold;
 }
 #ps5 {
@@ -118,10 +126,31 @@ article {
     background-image: url(https://images.kabum.com.br/produtos/fotos/sync_mirakl/434250/Controle-Microsoft-Wireless-Para-Xbox-One-X-Series-Preto_1677845915_gg.jpg);
 }
 #switch {
-    background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$);
+    background-image: url(https://static-www.o2.co.uk/sites/default/files/nintendo-switch-blue-red-sku-header-050521.png);
 }
 #pc {
-    background-image: url(https://gmedia.playstation.com/is/image/SIEPDC/dualsense-controller-product-thumbnail-01-en-14sep21?$facebook$);
+    background-image: url(https://shopinfo.vteximg.com.br/arquivos/ids/1383167-1000-1000/1.png?v=638168155569200000);
+}
+
+
+/*  NOTÍCIAS  */
+section > p {
+    padding: 10px;
+    text-align: justify;
+}
+
+.noticias {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid rgba(0, 0, 0, 0.349);
+    border-radius: 5px;
+    transition-duration: .2s;
+}
+
+.noticias:hover {
+    cursor: pointer;
+    border: 0px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.25);
 }
 
 /*  RODAPÉ  */
@@ -132,6 +161,21 @@ footer {
     text-align: center;
 
     padding: 10px;
+}
+footer span {
+    background-image: linear-gradient(180deg, white, darkgray);
+    
+    /* Apagar do fundo tudo que não estiver imediatamente atrás de texto */
+    background-clip: text;
+    -webkit-background-clip: text; /* Alguns navegadores precisam do prefixo */
+  
+    /* Apagar o texto, deixando apenas o fundo atrás dele */
+    -webkit-text-fill-color: transparent;
+  
+    /* Cor que contraste com o degradê, caso o navegador não suporte `background-clip: text` */
+    color: black;
+    font-weight: bold;
+    
 }
 footer a {
     color: var(--corA1);

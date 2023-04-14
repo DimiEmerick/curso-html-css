@@ -37,6 +37,11 @@ header {
     height: 75px;
 }
 
+header p {
+    margin: 0 30px;
+    color: whitesmoke;
+}
+
 h1 {
     color: aqua;
     font-family: 'Rowdies', cursive;

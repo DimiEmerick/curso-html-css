@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="estilos/media.css">
     <script src="https://kit.fontawesome.com/142432d4b9.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Games 4Life</h1>
     <p>Desafio com a proposta de criar um menu "hambúrguer".</p>
@@ -70,6 +70,15 @@
     </footer>
 
     <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+                menu.style.opacity = '1'
+            }
+        }
+
         function clickMenu() {
             var menu = document.getElementById("menu");
             if (menu.style.display == 'block') {

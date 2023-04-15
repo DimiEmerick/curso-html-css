@@ -175,6 +175,10 @@ section > p {
     text-align: justify;
 }
 
+div p {
+    opacity: 0.75;
+}
+
 .noticias {
     padding: 10px;
     margin: 10px 0;

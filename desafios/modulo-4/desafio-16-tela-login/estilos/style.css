@@ -1,10 +1,12 @@
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 * {
     margin: 0;
     padding: 0;
+
+    font-family: var(--fonte-padrao);
 }
 
 :root  {
@@ -12,5 +14,44 @@
     --verde: #238F99;
 
     --fonte-padrao: 'Source Sans Pro', Arial, Helvetica, sans-serif;
-    --fonte-titulo: 'Roboto Slab', Times, serif;
+    --fonte-titulo: 'Aboreto', cursive;
+}
+
+body, html {
+    background-color: var(--verde);
+    height: 100vh;
+    width: 100vw;
+}
+
+h1, h2 {
+    font-family: var(--fonte-titulo);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    background-color: whitesmoke;
+    width: 250px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+#imagem {
+    display: block;
+    background: var(--verde) url(../imagens/padrão.jpg) center center no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+#formulario {
+    display: block;
+    padding: 10px;
 }

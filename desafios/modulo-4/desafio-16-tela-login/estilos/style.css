@@ -10,7 +10,7 @@
 }
 
 :root  {
-    --azul: #3C47C7;
+    --azul: #4e5cf3;
     --verde: #238F99;
 
     --fonte-padrao: 'Source Sans Pro', Arial, Helvetica, sans-serif;
@@ -42,6 +42,8 @@ main {
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: width .2s, heigth .2s;
+    transition-timing-function: ease;
 }
 
 #imagem {

@@ -10,8 +10,8 @@
 }
 
 :root  {
-    --azul: #0092DB;
-    --verde: #238F99;
+    --azul: #0271a8;
+    --verde: #1c9aa5;
 
     --fonte-padrao: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     --fonte-titulo: 'Aboreto', cursive;
@@ -75,12 +75,29 @@ main {
     align-items: center;
     width: 100%;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin: 5px 0;
 }
 
 .campo i {
     margin: 0 7px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.campo > input {
+    background-color: #81cef4;
+    font-size: 1em;
+    width: calc(100% - 43px);
+    height: 90%;
+    padding-left: 5px;
+    border: 0;
+    border-radius: 8px;
+    transition-duration: .1s;
+}
+.campo > input:focus-within {
+    background-color: whitesmoke;
+
 }
 
 .campo > label {
@@ -95,7 +112,7 @@ form > input[type=submit] {
     background-color: var(--azul);
     color: whitesmoke;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     transition-duration: .15s;
 }
 
@@ -115,7 +132,7 @@ a.botao {
     margin-top: 5px;
     color: #016293;
     border: 1px solid var(--azul);
-    border-radius: 5px;
+    border-radius: 8px;
     text-decoration: none;
     transition-duration: .15s;
 }

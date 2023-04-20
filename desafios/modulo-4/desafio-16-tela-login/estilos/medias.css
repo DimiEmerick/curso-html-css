@@ -11,7 +11,7 @@
         flex-direction: row;
         align-items: stretch;
         width: 80vw;
-        height: 50vh;
+        height: 300px;
     }
 
     section#login > div#imagem {
@@ -36,7 +36,7 @@
 
     #login {
         width: 70vw;
-        height: 50vh;
+        height: 370px;
         display: flex;
         flex-direction: row-reverse;
         align-items: stretch;

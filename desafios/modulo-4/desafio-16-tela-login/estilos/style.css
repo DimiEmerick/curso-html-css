@@ -10,7 +10,7 @@
 }
 
 :root  {
-    --azul: #4e5cf3;
+    --azul: #0092DB;
     --verde: #238F99;
 
     --fonte-padrao: 'Source Sans Pro', Arial, Helvetica, sans-serif;
@@ -64,6 +64,65 @@ main {
 }
 
 #formulario > p {
-    text-align: justify;
+    text-align: center;
     font-size: 0.8em;
+    margin: 2px 0;
+}
+
+.campo {
+    background-color: var(--verde);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5px 0;
+}
+
+.campo i {
+    margin: 0 7px;
+}
+
+.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--azul);
+    color: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    transition-duration: .15s;
+}
+
+form > input[type=submit]:hover {
+    background-color: #016293;
+    cursor: pointer;
+}
+
+a.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    color: #016293;
+    border: 1px solid var(--azul);
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: .15s;
+}
+a.botao:hover {
+    background-color: #4cbaf1;
+}
+a.botao > i {
+    font-size: 0.85em;
+    margin-left: 5px;
 }

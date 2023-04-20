@@ -10,6 +10,8 @@
         display: flex;
         flex-direction: row;
         align-items: stretch;
+        width: 80vw;
+        height: 50vh;
     }
 
     section#login > div#imagem {
@@ -33,7 +35,8 @@
     }
 
     #login {
-        width: 950px;
+        width: 70vw;
+        height: 50vh;
         display: flex;
         flex-direction: row-reverse;
         align-items: stretch;
@@ -47,7 +50,7 @@
     section#login > div#formulario {
         flex: 1;
         height: 100%;
-    } 
+    }
 
     #formulario > h1 {
         font-size: 2em;
@@ -55,5 +58,6 @@
 
     #formulario > p {
         font-size: 1.2em;
+        margin: 20px 0;
     }
 }

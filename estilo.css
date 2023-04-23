@@ -39,6 +39,11 @@ h1, h2 {
     transition-duration: .1s;
 }
 
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
 p {
     line-height: 1.5em;
 }
@@ -63,10 +68,14 @@ header {
     border-bottom: 1px solid var(--claro);
 }
 
+/* H1 */
+#ling-block {
+    margin: 10px 0;
+}
 .ling {
     color: var(--cortexto);
     padding: 10px;
-    margin: 5px;
+    margin: 0 5px;
     border-radius: 5px;
 }
 #html {
@@ -78,6 +87,7 @@ header {
     border: 1px solid #1A73B9;
 }
 
+/* REDES SOCIAIS */
 .links > a {
     display: inline-block;
     color: var(--claro);
@@ -95,8 +105,10 @@ header {
 /*  CONTEÚDO  */
 main {
     display: flex;
-    justify-content: space-between;
-    padding: 50px;
+    flex-direction: column;
+    align-items: center;
+    width: 99vw;
+    padding: 10px;
     color: var(--cortexto);
     text-align: center;
 }
@@ -104,19 +116,14 @@ main {
 article {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
-    min-width: 500px;
-    max-width: 700px;
-    height: 500px;
-    margin: auto;
+    width: 75vw;
+    margin: 10px;
 }
 
 section {
     background-color: var(--medio);
     padding: 20px;
-    margin: auto;
+    margin: 10px 0;
     border-radius: 10px;
     border: 1px solid var(--claro);
 }
@@ -151,7 +158,7 @@ div > a {
     font-size: 2em;
 
     padding: 7px 15px 5px 15px;
-    margin: 0 7px 0 7px;
+    margin: 7px;
     border-radius: 10px;
     transition-duration: .1s;
 }
@@ -173,15 +180,13 @@ div > a:hover {
 aside {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--medio);
 
-    font-size: 0.75em;
+    font-size: 0.9em;
 
-    max-width: 500px;
+    width: 80vw;
     padding: 20px;
-    margin-left: 25px;
     border-radius: 10px;
     border: 1px solid var(--claro);
 }
@@ -193,6 +198,7 @@ aside > hr {
 img {
     width: 250px;
     border-radius: 7px;
+    border: 1px solid var(--claro);
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
 }
 
@@ -207,60 +213,4 @@ footer {
     min-height: 50px;
     padding: 10px 0 10px 50px;
     border-top: 1px solid var(--claro);
-}
-
-
-/*  RESPONSIVIDADE  */
-@media(max-width:900px) 
-{
-    h1 {
-        font-size: 1em;
-    }
-    .links > a {
-        font-size: 2em;
-        margin: 0 3px;
-    }
-
-    main {
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        padding: 15px;
-        margin: auto;
-    }
-
-    article {
-        min-width: 100px;
-        max-width: 400px;
-        margin-bottom: 50px;
-    }
-
-    section {
-        max-width: 300px;
-        margin: 0;
-        margin: 5px 0;
-    }
-
-    div > a {
-        width: 75px;
-        margin: 5px 0;
-    }
-
-    aside {
-       margin-left: 0;
-       margin: 5px 0;
-    }
-
-}
-
-@media(max-width:356px) {
-    h1 {
-        font-size: .60em;
-    }
-    img {
-        width: 200px;
-    }
-    .acesso {
-        padding: 5px;
-    }
 }

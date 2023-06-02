@@ -58,6 +58,11 @@ header {
     border-bottom: 1px solid var(--claro);
 }
 
+header a {
+    color: var(--claro);
+    font-size: 2.5em;
+}
+
 .ling {
     color: var(--cortexto);
     padding: 10px;

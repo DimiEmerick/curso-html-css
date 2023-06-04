@@ -1,0 +1,225 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*  CONFIGURAÇÕES GERAIS  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cortexto:  #d6d6d6;
+    --textescuro: #838383;
+    --claro: #3c3c3c;
+    --medio: #1f1f1f;
+    --escuro: #141414;
+
+    --fonte-padrao: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    --fonte-titulo: 'Bebas Neue', cursive;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-image: linear-gradient(145deg, var(--escuro) 75%, #AB1D13);
+    background-attachment: fixed;
+
+    font-family: var(--fonte-padrao);
+
+    height: 100vh;
+}
+
+h1, h2 {
+    font-family: var(--fonte-titulo);
+    font-weight: 400;
+    transition-duration: .1s;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+
+/*  CABEÇALHO  */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--escuro);
+    color: var(--textescuro);
+
+    height: 100px;
+    padding: 25px;
+    border-bottom: 1px solid var(--claro);
+}
+
+header a {
+    color: var(--claro);
+    font-size: 2.5em;
+}
+
+.ling {
+    color: var(--cortexto);
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+#html {
+    background-color: #F16524;
+    border: 1px solid #E54C21;
+}
+#css {
+    background-color: #1C88C7;
+    border: 1px solid #1A73B9;
+}
+
+.links > a {
+    display: inline-block;
+    color: var(--claro);
+
+    font-size: 3.5em;
+
+    margin: 0 7px 0 7px;
+    transition-duration: .1s;
+}
+.links > a:hover {
+    color: var(--textescuro);
+}
+
+
+/*  CONTEÚDO GERAL  */
+
+main > p {
+    font-size: 1.25em;
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    min-width: 500px;
+    max-width: 700px;
+    margin: auto;
+}
+
+section {
+    background-color: var(--medio);
+
+    min-width: 300px;
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--claro);
+}
+
+ul {
+    list-style-position: inside;
+    list-style-type: none;
+
+    margin: 7px 3px;
+}
+
+li {
+    padding: 3px;
+}
+
+section a {
+    color: var(--cortexto);
+    text-shadow: 
+    -1px -1px 0px rgb(0, 0, 0), 
+    -1px 1px 0px rgb(0, 0, 0),                    
+     1px -1px 0px rgb(0, 0, 0),                  
+     1px 0px 0px rgb(0, 0, 0);
+    font-weight: bold;
+    text-decoration: none;
+    transition-duration: .1s;
+}
+
+li > a:hover {
+    text-decoration: underline;
+    margin-left: 5px;
+}
+
+section > p > a:hover {
+    text-decoration: underline;
+}
+
+.lista h2 {
+   color: var(--textescuro);
+    text-shadow: 
+               -1px -1px 0px rgb(0, 0, 0), 
+               -1px 1px 0px rgb(0, 0, 0),                    
+                1px -1px 0px rgb(0, 0, 0),                  
+                1px 0px 0px rgb(0, 0, 0);
+    /*-webkit-text-stroke: 1px rgb(0, 0, 0);*/
+}
+
+.aviso {
+    color: var(--cortexto);
+    font-family: var(--fonte-titulo);
+    text-align: center;
+}
+
+#vers p {
+    color: var(--claro);
+}
+
+#basic {
+    background-color: #292929;
+}
+
+#design {
+    background-image: linear-gradient(130deg, darkred, darkorange, darkgreen, rgb(0, 173, 173), darkblue, purple, crimson);
+}
+
+#vers {
+    background-image: linear-gradient(180deg, #e05301, #aa3e00);
+}
+
+#form {
+    background-image: url(../Imagens/env-wall.jpg);
+    background-position: center center;
+}
+
+
+
+/*  MEDIAS  */
+@media(max-width: 725px) {
+    header {
+        padding: 14px;
+    }
+    h1 {
+        font-size: 1em;
+    }
+
+    .links > a {
+        font-size: 2em;
+    }
+
+    article {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+        max-width: 300px;
+        min-width: 300px;
+        margin: auto;
+    }
+
+    section {
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    .aviso {
+        font-size: 1em;
+        margin: 20px 0;
+    }
+}

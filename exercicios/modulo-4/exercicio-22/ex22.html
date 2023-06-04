@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link rel="shortcut icon" href="../../../Imagens/favicon-env.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css" media="screen">
+    <link rel="stylesheet" href="estilos/print.css" media="print">
+    <script src="https://kit.fontawesome.com/142432d4b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Media Query</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../exercicios.html"><i class="fa-solid fa-arrow-left"></i> Exercícios</a></li>
+            <li><a href="https://github.com/DimiEmerick/curso-html-css/tree/main/exercicios/modulo-4/exercicio-21" target="_blank"><i class="fa-solid fa-code"></i> Código</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <p><em>Media Query</em> é um recurso nas CSS capaz de adaptar o conteúdo de um site para diversas plataformas e tipos de telas (<em>desktop</em>, celular, impressora). É um recurso altamente usado nos dias de hoje pela necessidade que temos de consumir o conteúdo em diversos aparelhos. Tente imprimir essa página (<code>CTRL + P</code>) para ver um exemplo de <em>Media Query</em>.</p>
+
+            <p>Com as <em>Media Queries</em> é possível ajustar o tamanho, fonte e até comportamento do site em questão para o usuário ter uma melhor experiência independente da forma que esteja consumindo o conteúdo.</p>
+            
+            <hr>
+
+            <h2>Media Type</h2>
+
+            <p><em>Media Types</em> é um recurso atualmente insuficiente e quase obsoleto mas ainda pode ser usado em circunstâncias específicas. Dentro de um <code>link</code> para um estilo CSS, deve-se inserir o parâmetro <code>media</code> e especificar o seu tipo. Os tipos são descritos a seguir:</p>
+
+            <ul>
+                <li><code>all</code>: Mídia para todos os dispositivos.</li>
+                <li><code>print</code>: Mídia para impressoras ou dispositivos que reproduzem uma tela de impressão.</li>
+                <li><code>screen</code>: Mídia para todos os dispositivos que não se encaixam em '<code>print</code>'.</li>
+            </ul>
+
+            <hr>
+
+            <h2>Media Features</h2>
+
+            <p>Um recurso que define as características de uma <em>Media Query</em>. É mais específico que uma <em>Media Type</em> e pode ser usado livremente utilizando as especificações que forem necessárias. É preciso colocar as especificações entre parênteses, por exemplo:</p>
+
+            <p><code>media = "screen and <strong>(max-width: 500px)</strong>"</code></p>
+
+            <p>Nesse exemplo, o estilo vai ser aplicado a uma tela que tenha no máximo 500 pixels de largura. Um exemplo mais específico pode ser visto na imagem a seguir, onde dependendo se a tela estiver na orientação de paisagem ou retrato (para telas como as de celular, que possuem acelerômetro), a imagem é alterada para uma melhor exibição.</p>
+
+            <section>
+                <figure>
+                    <picture>
+                        <source media="(orientation: portrait)" srcset="imagens/cev-portrait.jpg">
+                        <source srcset="imagens/cev-landscape.jpg">
+                        <img src="imagens/cev-landscape.jpg" alt="Banner Curso em Vídeo">
+                    </picture>
+                    <figcaption>Banner de exibição CursoemVideo</figcaption>
+                </figure>
+            </section>
+
+            <hr>
+
+            <h2>Regra at de Media Queries</h2>
+
+            <p>Para não precisar criar vários arquivos CSS para cada especificação de media, existe uma <code>at-rule</code> que pode ser colocada em um arquivo CSS com esse mesmo propósito, ela consiste em:</p>
+
+            <pre>
+                <code>
+                    @media (condições para o estilo) {
+                        /* configurações de estilos */
+                    }</code>
+            </pre>
+
+            <p>Geralmente essa regra deve ser colocada no fim das estilizações do arquivo padrão CSS do projeto, para não haver conflitos.</p>
+        </article>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="../../../index.html">Página Inicial</a></li>
+            <li><a href="../../exercicios.html">Exercícios</a></li>
+            <li><a href="../../../desafios/desafios.html">Desafios</a></li>
+        </ul>
+        <p>Exercício 22 do <span>Módulo 4: &#x1F4E8; Formulários</span>, do Curso de HTML5 e CSS3 do <a href="https://www.cursoemvideo.com" target="_blank" rel="noopener noreferrer nofollow">CursoemVideo</a>, feito por <a href="https://github.com/DimiEmerick" target="_blank" rel="noopener noreferrer nofollow">Dimitrios Emerick</a>.</p>
+    </footer>
+</body>
+</html>

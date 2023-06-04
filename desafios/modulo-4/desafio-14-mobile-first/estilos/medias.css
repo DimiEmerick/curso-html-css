@@ -1,0 +1,64 @@
+@media screen and (min-width: 700px) {  /* TABLETS */
+    body {
+        background: url(../imagens/back-tablet.jpg) center center no-repeat fixed;
+        background-size: cover;
+    }
+    div::after {
+        content: 'Você está vendo essa página por um tablet.';
+    }
+    img#phone { display: none; }
+    img#tablet { display: block; margin: auto; }
+}
+@media screen and (min-width: 1000px) {  /* DESKTOPS */
+    body {
+        background: url(../imagens/back-pc.jpg) center center no-repeat fixed;
+        background-size: cover;
+    }
+    div::after {
+        content: 'Você está vendo essa página por um computador ou notebook.';
+    }
+    img#phone { display: none; }
+    img#pc { display: block; margin: auto; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+    img#tv { display: none; }
+}
+@media screen and (min-width: 1600px) {  /* TVS */
+    body {
+        background: url(../imagens/back-tv.jpg) center center no-repeat fixed;
+        background-size: cover;
+    }
+    div::after {
+        content: 'Você está vendo essa página por uma televisão (ou um monitor grande).';
+    }
+    img#phone { display: none; }
+    img#tv { display: block; margin: auto; }
+    img#pc { display: none; }
+    img#tablet { display: none; }
+    img#print { display: none; }
+}
+@media print {  /* IMPRESSORAS */
+    body {
+        background: url(../imagens/back-print.jpg) center center no-repeat fixed;
+        background-size: cover;
+    }
+    div::after {
+        content: 'Você está imprimindo essa página (que estranho).';
+        text-decoration: overline;
+    }
+    h1 {
+        box-shadow: none;
+    }
+    main {
+        max-width: 100%;
+        box-shadow: none;
+    }
+    main::after {
+        content: 'Essa impressão foi feita pelo repositório de Dimitrios Emerick do Curso de HTML5 e CSS3';
+    }
+    img#phone { display: none; }
+    img#tv { display: none; }
+    img#pc { display: none; }
+    img#tablet { display: none; }
+    img#print { display: block; margin: 20px auto;}
+}

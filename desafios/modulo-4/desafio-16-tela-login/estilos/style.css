@@ -1,0 +1,145 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: var(--fonte-padrao);
+}
+
+:root  {
+    --azul: #0271a8;
+    --verde: #1c9aa5;
+
+    --fonte-padrao: 'Source Sans Pro', Arial, Helvetica, sans-serif;
+    --fonte-titulo: 'Aboreto', cursive;
+}
+
+body, html {
+    background-color: var(--verde);
+    height: 100vh;
+    width: 100vw;
+}
+
+h1, h2 {
+    font-family: var(--fonte-titulo);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#login {
+    background-color: whitesmoke;
+    width: 250px;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: width .2s, heigth .2s;
+    transition-timing-function: ease;
+}
+
+#imagem {
+    display: block;
+    background: var(--verde) url(../imagens/padrão.jpg) center center no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+#formulario {
+    display: block;
+    padding: 10px;
+}
+
+#formulario > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#formulario > p {
+    text-align: center;
+    font-size: 0.8em;
+    margin: 2px 0;
+}
+
+.campo {
+    background-color: var(--verde);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+.campo i {
+    margin: 0 7px;
+    color: white;
+    font-size: 1.5em;
+}
+
+.campo > input {
+    background-color: #81cef4;
+    font-size: 1em;
+    width: calc(100% - 43px);
+    height: 90%;
+    padding-left: 5px;
+    border: 0;
+    border-radius: 8px;
+    transition-duration: .1s;
+}
+.campo > input:focus-within {
+    background-color: whitesmoke;
+
+}
+
+.campo > label {
+    display: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: var(--azul);
+    color: whitesmoke;
+    border: none;
+    border-radius: 8px;
+    transition-duration: .15s;
+}
+
+form > input[type=submit]:hover {
+    background-color: #016293;
+    cursor: pointer;
+}
+
+a.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    color: #016293;
+    border: 1px solid var(--azul);
+    border-radius: 8px;
+    text-decoration: none;
+    transition-duration: .15s;
+}
+a.botao:hover {
+    background-color: #4cbaf1;
+}
+a.botao > i {
+    font-size: 0.85em;
+    margin-left: 5px;
+}

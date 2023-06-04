@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../Imagens/favicon-clip.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercício 19</title>
+    <script src="https://kit.fontawesome.com/142432d4b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Tabelas</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../exercicios.html"><i class="fa-solid fa-arrow-left"></i> Exercícios</a></li>
+            <li><a href="https://github.com/DimiEmerick/curso-html-css/tree/main/exercicios/modulo-3/exercicio-19" target="_blank"><i class="fa-solid fa-code"></i> Código</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <h2>Tabelas Simples</h2>
+
+            <p>Tabelas são um recurso muito importante para a organização dados no geral, em <abbr title="HyperText Markup Language">HTML</abbr> para criar uma tabela usa-se a <strong>tag</strong> <code>table</code> e, dentro dela, algumas tags de definição de conteúdo, tais como:
+            </p>
+
+            <ul>
+                <li><code>tr</code> (Table Row) - Linha da tabela</li>
+                <li><code>th</code> (Table Header) - Cabeçalho da tabela</li>
+                <li><code>td</code> (Table Data) - Dado da tabela</li>
+            </ul>
+
+            <p>Uma tabela simples tem geralmente esta aparência:</p>
+
+            <table>
+                <tr>
+                    <th>Código</th>
+                    <th>Nomes</th>
+                    <th>Dados</th>
+                </tr>
+                <tr>
+                    <td>001</td>
+                    <td>Alfredo</td>
+                    <td>Dado 1</td>
+                </tr>
+                <tr>
+                    <td>002</td>
+                    <td>Guilherme</td>
+                    <td>Dado 2</td>
+                </tr>
+                <tr>
+                    <td>003</td>
+                    <td>Larissa</td>
+                    <td>Dado 3</td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <h2>Anatomia de Tabelas</h2>
+            
+            <p>Essa anatomia é utilizada para tabelas grandes e melhora o resultado em <strong>sites de busca</strong>, consiste em adicionar os seguintes elementos na tabela:</p>
+
+            <ul>
+                <li><code>caption</code> - Legenda/Descrição</li>
+                <li><code>thead</code> - Cabeçalho</li>
+                <li><code>tbody</code> - Corpo</li>
+                <li><code>tfoot</code> -  Rodapé</li>
+            </ul>
+            
+            <p>Todos esses elementos podem conter seus próprios <code>tr</code>, <code>td</code> e <code>th</code> (menos o <code>caption</code>).</p>
+
+            <p>Independente da ordem que você colocar as tags de anatomia, o navegador <strong>sempre</strong> vai organizar na ordem correta.</p>
+
+            <h3>Scope</h3>
+
+            <p>É um atributo de um <code>th</code> que indica para qual direção o título está mostrando os dados, pode ter os valores:</p>
+
+                <ul>
+                    <li><code>row</code> - Dados em linha</li>
+                    <li><code>col</code> - Dados em coluna</li>
+                    <li><code>colgroup</code> - Dados num conjunto de colunas (para células mescladas)</li>
+                    <li><code>rowgroup</code> - Dados num conjunto de linhas (para células mescladas)</li>
+                </ul>
+
+            <p>Obs.: Esse atributo é extremamente útil para ajudar o site a ser relevante em <strong>sites de busca</strong>.</p>
+
+            <p>Um exemplo de uma tabela utilizando todos os atributos da anatomia citada a cima pode ser visto a seguir:</p>
+
+            <table class="especial">
+                <caption>Boletim</caption>
+                <thead>
+                    <th scope="col">Aluno</th>
+                    <th scope="col">Nota</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ana</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>Dimi</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Gustavo</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Laís</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Rodrigo</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Samira</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Vinícius</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <th scope="row">Média</th>
+                    <th>7,2</th>
+                </tfoot>
+            </table>
+
+            <hr>
+
+            <h2>Mesclagem de Células</h2>
+
+            <p>Mesclar células em uma tabela é algo bem comum e importante, em <abbr title="HyperText Markup Language">HTML</abbr> é necessário colocar os seguintes atributos nas tags <code>th</code> ou <code>td</code>:</p>
+
+            <ul>
+                <li><code>colspan</code> - Mesclagem em coluna.</li>
+                <li><code>rowspan</code> - Mesclagem em linha.</li>
+            </ul>
+
+            <p>Depois, adiciona-se o valor que representa o número de células que ela irá ocupar. Um exemplo pode ser visto a seguir:</p>
+
+            <table class="mesc">
+                    <tr>
+                        <td>A</td>
+                        <td colspan="2" style="background-color: darkgray;">B</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" style="background-color: darkgray;">C</td>
+                        <td>D</td>
+                        <td>E</td>
+                    </tr>
+                    <tr>
+                        <td>F</td>
+                        <td>G</td>
+                    </tr>
+            </table>
+
+            <hr>
+
+            <h2>Estilização de Colunas</h2>
+
+            <p>Para especificar uma coluna em uma tabela HTML, usa-se a tag <code>colgroup</code>, ela é uma tag que define as <strong>colunas</strong> em uma tabela, cada coluna é representada por uma tag <code>col</code> que fica dentro de <code>colgroup</code>, isso facilita na hora de estilizar colunas com CSS.</p>
+
+            <p>A tag <code>col</code> possui o <strong>parâmetro</strong> <code>span</code> que especifica quantas colunas uma mesma tag <code>col</code> pode representar.</p>
+
+            <p>Um exemplo de tabela com colunas estilizadas:</p>
+
+            <table>
+                <colgroup>
+                    <col class="col1">
+                    <col class="col2" span="2">
+                    <col class="col1">
+                </colgroup>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Sexo</th>
+                    <th>Profissão</th>
+                </tr>
+                <tr>
+                    <td>Ana Maria</td>
+                    <td>F</td>
+                    <td>25</td>
+                    <td>Jornalista</td>
+                </tr>
+                <tr>
+                    <td>Claudio</td>
+                    <td>M</td>
+                    <td>28</td>
+                    <td>Programador</td>
+                </tr>
+                <tr>
+                    <td>Gustavo</td>
+                    <td>M</td>
+                    <td>42</td>
+                    <td>Professor</td>
+                </tr>
+                <tr>
+                    <td>Heitor</td>
+                    <td>M</td>
+                    <td>19</td>
+                    <td>Vendedor</td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>F</td>
+                    <td>39</td>
+                    <td>Médica</td>
+                </tr>
+                <tr>
+                    <td>Otávio</td>
+                    <td>M</td>
+                    <td>22</td>
+                    <td>Nutricionista</td>
+                </tr>
+            </table>
+
+            <hr>
+
+            <h2>Responsividade</h2>
+
+            <p>Por útlimo, também é possível deixar uma tabela larga <strong>responsiva</strong> colocando-a dentro de uma <code>div</code> e usando a propriedade CSS <code>overflow-x</code>.</p>
+
+            <div class="container">
+                <table class="especial">
+                    <tr>
+                        <th>Produto</th>
+                        <th>Jan</th>
+                        <th>Fev</th>
+                        <th>Mar</th>
+                        <th>Abr</th>
+                        <th>Mai</th>
+                        <th>Jun</th>
+                        <th>Jul</th>
+                        <th>Ago</th>
+                        <th>Set</th>
+                        <th>Out</th>
+                        <th>Nov</th>
+                        <th>Dez</th>
+                    </tr>
+                    <tr>
+                        <td>TV 40"</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Home Theater</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Samsung Galaxy S20</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>iPad Mini</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>PlayStation 5</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                    <tr>
+                        <td>Lava Louças</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>04</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>02</td>
+                    </tr>
+                    <tr>
+                        <td>Amazon Echo</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>07</td>
+                        <td>12</td>
+                        <td>12</td>
+                        <td>10</td>
+                        <td>05</td>
+                        <td>02</td>
+                        <td>01</td>
+                        <td>01</td>
+                        <td>04</td>
+                        <td>16</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+
+            <p>Enfim, esse foi todo o meu aprendizado nesse curso sobre a criação e uso das <strong>tabelas</strong> em HTML5, com algumas estilizações em CSS3.</p>
+
+            <p>Acesse <a href="../../../desafios/modulo-3/desafio-12-tabelas/d12.html">aqui</a> o <strong>desafio</strong> referente à esse exercício.</p>
+        </article>
+    </main>
+
+    <footer>
+        <p>Exercício 19 do <span>Módulo 3: &#x1F9F7;  Versionamento</span>, do Curso de HTML5 e CSS3 do <a href="https://www.cursoemvideo.com" target="_blank" rel="noopener noreferrer nofollow">CursoemVideo</a>, feito por <a href="https://github.com/DimiEmerick" target="_blank" rel="noopener noreferrer nofollow">Dimitrios Emerick</a>.</p>
+    </footer>
+</body>
+</html>

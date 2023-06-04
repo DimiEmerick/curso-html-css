@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 15 - Menu Responsivo</title>
+    <link rel="shortcut icon" href="../../../Imagens/favicon-env.ico" type="image/x-icon">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media.css">
+    <script src="https://kit.fontawesome.com/142432d4b9.js" crossorigin="anonymous"></script>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <h1>Games 4Life</h1>
+    <p>Desafio com a proposta de criar um menu "hambúrguer".</p>
+    </header>
+    <nav>
+        <i class="fa-solid fa-bars" id="menuzin" onclick="clickMenu()"></i>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Página Inicial</a></li>
+                <li><a href="#">Categorias</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Nossa História</a></li>
+                <li><a href="#">Fale Conosco</a></li>
+            </ul>
+        </menu>
+    </nav>
+    <main>
+        <article>
+            <h2>Plataformas</h2>
+            <section id="plat">
+                <div class="img_plat" id="ps5">PS5</div>
+                <div class="img_plat" id="xone">Xbox One X</div>
+                <div class="img_plat" id="switch">Nintendo Switch</div>
+                <div class="img_plat" id="pc">PC</div>
+            </section>
+            <h2>Últimas Notícias</h2>
+            <section id="not">
+                <div class="noticias">
+                    <a href="#">Hogwarts Legacy é um sucesso!</a>
+                    <p>Jogo baseado na famosa saga de J.K. Rowling atinge em cheio as altas expectativas.</p>
+                </div>
+                <div class="noticias">
+                    <a href="#">PlayStation 5 é danificado facilmente?!</a>
+                    <p>Pesquisas apontam que console da Sony tem chances de vazar líquido interno.</p>
+                </div>
+                <div class="noticias">
+                    <a href="#">God of War é lançado para PC.</a>
+                    <p>O exclusivo da Sony agora também pode ser jogado nos computadores.</p>
+                </div>
+            </section>
+            <section>
+                <h2>Sobre</h2>
+                <p>Olá, sou Dimitrios e sou o fundador e editor-chefe do blog Games 4Life. Sou um entusiasta de games e apaixonado por notícias e novidades do mundo dos jogos.</p>
+                <p>Aqui no Games 4Life, você encontrará as últimas notícias, análises, reviews e opiniões sobre os mais diversos jogos, desde clássicos retrô até os mais recentes lançamentos para todas as plataformas, incluindo PlayStation, Xbox, Nintendo Switch e PC.</p>
+                <p>Tenho uma vasta experiência na indústria de jogos e estou sempre buscando compartilhar meu conhecimento e paixão com outros gamers. Acredito que os jogos são mais do que apenas uma forma de entretenimento, eles podem nos proporcionar experiências incríveis, nos conectar com outras pessoas e até mesmo inspirar-nos em várias áreas da vida.</p>
+                <p>Espero que você goste do conteúdo do Games 4Life e que ele possa ser uma fonte confiável e interessante para você se manter atualizado sobre as notícias e novidades do mundo dos jogos. Sinta-se à vontade para deixar seus comentários e compartilhar suas opiniões. Obrigado por visitar o Games 4Life!</p>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <ul>
+            <li><a href="../../../index.html">Página Inicial</a></li>
+            <li><a href="../../exercicios.html">Exercícios</a></li>
+            <li><a href="../../../desafios/desafios.html">Desafios</a></li>
+        </ul>
+        <p>Desafio 15 do <span>Módulo 4: &#x1F4E8; Formulários</span>, do Curso de HTML5 e CSS3 do <a href="https://www.cursoemvideo.com" target="_blank" rel="noopener noreferrer nofollow">CursoemVideo</a>, feito por <a href="https://github.com/DimiEmerick" target="_blank" rel="noopener noreferrer nofollow">Dimitrios Emerick</a>.</p>
+    </footer>
+
+    <script>
+        function mudouTamanho() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block'
+            } else {
+                menu.style.display = 'none'
+                menu.style.opacity = '1'
+            }
+        }
+
+        function clickMenu() {
+            var menu = document.getElementById("menu");
+            if (menu.style.display == 'block') {
+                menu.style.opacity = '0';
+                setTimeout(function() {
+                    menu.style.display = 'none';
+                }, 300);
+            } else {
+                menu.style.display = 'block';
+                setTimeout(function() {
+                    menu.style.opacity = '1';
+                }, 10);
+            }
+        }
+    </script>
+</body>
+</html>

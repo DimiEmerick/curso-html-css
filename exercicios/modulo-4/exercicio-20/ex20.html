@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 20</title>
+    <link rel="shortcut icon" href="../../../Imagens/favicon-env.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/142432d4b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>iFrames</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../../exercicios.html"><i class="fa-solid fa-arrow-left"></i> Exercícios</a></li>
+            <li><a href="https://github.com/DimiEmerick/curso-html-css/tree/main/exercicios/modulo-4/exercicio-20" target="_blank"><i class="fa-solid fa-code"></i> Código</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <p><code>iframe</code> é uma tag em <span title="Hypertext Markup Language">HTML</span> que permite o uso de uma "nova aba" do navegador com outro site dentro dele para exibição no site o qual ele foi inserido, também usado para demonstrar vídeos, mapas e até outros documentos dentro de um site.</p>
+
+            <p>Exemplo:</p>
+
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OEV8gMkCHXQ" title="Isso é um iFrame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <hr>
+
+            <h2>Tamanho</h2>
+
+            <p>É possível alterar o tamanho de um <code>iframe</code> usando os parâmetros <code>width</code> e <code>height</code>, por padrão um <code>iframe</code> tem <strong>300x150 pixels</strong> de tamanho.</p>
+
+            <hr>
+
+            <h2><code>Scrolling</code></h2>
+
+            <p>Parâmetro usado pra definir se o <code>iframe</code> terá rolagem ou não. Por padrão seu valor é <code>yes</code>, para desabilitá-lo, coloque o valor <code>no</code>.</p>
+
+            <div>
+                <iframe class="interno" srcdoc="<h1>iFrame com rolagem</h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, quibusdam eligendi? Adipisci quae deleniti repudiandae corporis? Doloribus perspiciatis enim totam, reprehenderit molestias eos inventore quo tempore saepe assumenda nihil quasi?</p>" frameborder="0"></iframe>
+            </div>
+            <div>
+                <iframe class="interno" srcdoc="<h1>iFrame sem rolagem</h1> <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, quibusdam eligendi? Adipisci quae deleniti repudiandae corporis? Doloribus</p>" frameborder="0" scrolling="no"></iframe>
+            </div>
+
+            <hr>
+
+            <h2>Navegação</h2>
+
+            <p>Pode-se fazer com que um link seja aberto no <code>iframe</code>, para isso, define-se um name para o <code>iframe</code> e um <code>target</code> com esse nome é inserido no link.</p>
+
+            <a href="link1.html" target="links">Link 1</a> 
+            <a href="link2.html" target="links">Link 2</a> 
+            <a href="link3.html" target="links">Link 3</a>
+
+            <div><iframe class="interno" name="links" src="" frameborder="0"></iframe></div>
+
+            <hr>
+
+            <h2><code>SrcDoc</code> (<em>Source Document</em>)</h2>
+
+            <p>Esse parâmetro é utilizado para inserir tags <span title="Hypertext Markup Language">HTML</span> dentro do <code>iframe</code>, criando o documento dentro dele sem precisar especificar nenhuma url ou diretório (Não recomendado pois seu uso é extremamente específico).</p>
+
+            <p>Exemplo:</p>
+
+            <div>
+                <iframe class="interno" srcdoc="<h1>Não sou um documento à parte</h1><p>Essas tags estão escritas diretamente em mim (por isso o conteúdo está meio feio).</p>" frameborder="0"></iframe>
+            </div>
+
+            <hr>
+
+            <h2>Inconveniências</h2>
+
+            <p>Algumas <strong>desvantagens</strong> para o uso de <code>iframes</code> incluem:</p>
+
+            <ul>
+                <li>Conteúdo com alta indexação (ferramentas de busca irão ignorar mais facilmente);</li>
+                <li>Falta de acessibilidade;</li>
+                <li>Problemas de usabilidade;</li>
+                <li>Problemas de navegação;</li>
+                <li>Problemas com responsividade;</li>
+                <li>Falta de segurança (abre portas para o site indexado).</li>
+            </ul>
+
+            <hr>
+
+            <h2><code>Sandbox</code></h2>
+
+            <p>Parâmetro usado para <strong>reforçar a segurança</strong> de um <code>iframe</code>, seu principal valor é seu próprio nome: <code>sandbox</code> que fará com que qualquer dado inserido no site dentro do <code>iframe</code> não seja capturado/usado. Ele possui diversos valores para limitar o uso de dados, porém <code>sandbox</code> é um valor que limita qualquer tipo de dado.</p>
+
+            <hr>
+
+            <h2><code>ReferrerPolicy</code></h2>
+
+            <p>Parâmetro usado para <strong>reforçar a segurança</strong> de um <code>iframe</code>, o valor usado será <code>no-referrer</code>. Isso impede o site dentro do <code>iframe</code> de coletar qualquer dado com uso de propaganda (como <em>cookies</em> por exemplo).</p>
+        </article>
+    </main>
+    
+    <footer>
+        <p>Exercício 20 do <span>Módulo 4: &#x1F4E8; Formulários</span>, do Curso de HTML5 e CSS3 do <a href="https://www.cursoemvideo.com" target="_blank" rel="noopener noreferrer nofollow">CursoemVideo</a>, feito por <a href="https://github.com/DimiEmerick" target="_blank" rel="noopener noreferrer nofollow">Dimitrios Emerick</a>.</p>
+    </footer>
+</body>
+</html>

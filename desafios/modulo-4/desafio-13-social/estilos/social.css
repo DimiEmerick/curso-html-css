@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+}
+::-webkit-scrollbar {
+    width: 0;
+}
+img {
+    width: 100vw;
+}
+a {
+    display: block;
+    background-color: darkblue;
+    color: white;
+
+    text-align: center;
+    text-decoration: none;
+
+    padding: 20px;
+    margin-top: -5px;
+    transition-duration: .1s;
+}
+a:hover {
+    background-color: rgb(4, 4, 165);
+}

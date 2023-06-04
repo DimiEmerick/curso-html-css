@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../../Imagens/favicon-clip.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio 12</title>
+    <script src="https://kit.fontawesome.com/142432d4b9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Tabelas</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="../../desafios.html"><i class="fa-solid fa-arrow-left"></i> Desafios</a></li>
+            <li><a href="https://github.com/DimiEmerick/curso-html-css/tree/main/desafios/modulo-3/desafio-12-tabelas" target="_blank"><i class="fa-solid fa-code"></i> Código</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article>
+            <p>Nesta página há um total de 4 desafios propostos para o uso de <strong>tabelas.</strong></p>
+
+            <h2>Mesclagem</h2>
+
+            <p>Esses são dois desafios com o intuito de entender a <strong>mesclagem de células</strong>.</p>
+
+            <table>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td rowspan="2">3</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td colspan="3">8</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">10</td>
+                    <td colspan="2">11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>14</td>
+                    <td>15</td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td colspan="4">A</td>
+                    <td rowspan="4">B</td>
+                </tr>
+                <tr>
+                    <td rowspan="4">C</td>
+                    <td>D</td>
+                    <td>E</td>
+                    <td>F</td>
+                </tr>
+                <tr>
+                    <td>G</td>
+                    <td>H</td>
+                    <td>I</td>
+                </tr>
+                <tr>
+                    <td>J</td>
+                    <td>L</td>
+                    <td>M</td>
+                </tr>
+                <tr>
+                    <td colspan="4">N</td>
+                </tr>
+            </table>
+
+            <h2>Geral</h2>
+
+            <p>Esses são desafios mais complexos, com o intuito de entender todas as tags e atributos pertencentes a uma tabela em HTML, incluindo responsividade.</p>
+
+            <div class="container">
+                <table class="grande">
+                    <caption>Filmes Favoritos</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Grupo</th>
+                            <th scope="col">Nomes</th>
+                            <th scope="colgroup" colspan="3">Filmes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="rowgroup" rowspan="3">Mulheres</th>
+                            <td>Ana Maria Santos</td>
+                            <td>Alien</td>
+                            <td>Inception</td>
+                            <td>Vingadores</td>
+                        </tr>
+                        <tr>
+                            <td>Beatriz Souza</td>
+                            <td>Hulk</td>
+                            <td>Inception</td>
+                            <td>Batman</td>
+                        </tr>
+                        <tr>
+                            <td>Cláudia Melo</td>
+                            <td>Hulk</td>
+                            <td>Inception</td>
+                            <td>Vingadores</td>
+                        </tr>
+                        <tr>
+                            <th scope="rowgroup" rowspan="3">Homens</th>
+                            <td>Bruno Mendonça</td>
+                            <td>Star Wars 5</td>
+                            <td>Amnésia</td>
+                            <td>Batman</td>
+                        </tr>
+                        <tr>
+                            <td>Danoel Lourenço</td>
+                            <td>Star Wars 5</td>
+                            <td>Matrix</td>
+                            <td>Vingadores</td>
+                        </tr>
+                        <tr>
+                            <td>Fabiano Mota</td>
+                            <td>Star Wars 5</td>
+                            <td>Matrix</td>
+                            <td>Vingadores</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th scope="rowgroup" colspan="3" rowspan="3">Filme mais favoritado</th>
+                            <th scope="row">Homens</th>
+                            <td>Star Wars 5</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Mulheres</th>
+                            <td>Inception</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Geral</th>
+                            <td>Vingadores</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+            <div class="container">
+                <table class="grande">
+                    <caption>Boletim Escolar</caption>
+                    <thead>
+                        <tr>
+                            <th class="the" scope="col" rowspan="2">Área</th>
+                            <th class="the" scope="col" rowspan="2">Disciplinas</th>
+                            <th class="the" scope="colgroup" colspan="2">Notas</th>
+                            <th class="the" scope="col" rowspan="2">Média</th>
+                        </tr>
+                        <tr>
+                            <th class="the" scope="col">Nota 1</th>
+                            <th class="the" scope="col">Nota 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="area" scope="rowgroup" rowspan="4">Exatas</th>
+                            <td>Matemática</td>
+                            <td>5.7</td>
+                            <td>7.6</td>
+                            <td>6.6</td>
+                        </tr>
+                        <tr>
+                            <td>Física</td>
+                            <td>6.8</td>
+                            <td>5.2</td>
+                            <td>6.0</td>
+                        </tr>
+                        <tr>
+                            <td>Química</td>
+                            <td>7.4</td>
+                            <td>9.5</td>
+                            <td>8.4</td>
+                        </tr>
+                        <tr>
+                            <td>Biologia</td>
+                            <td>5.7</td>
+                            <td>7.6</td>
+                            <td>6.6</td>
+                        </tr>
+                        <tr>
+                            <th class="the" scope="row" colspan="4">Média de Exatas</th>
+                            <td class="media">6.9</td>
+                        </tr>
+                        <tr>
+                            <th class="area" scope="rowgroup" rowspan="2">Humanas</th>
+                            <td>História</td>
+                            <td>7.8</td>
+                            <td>7.5</td>
+                            <td>7.6</td>
+                        </tr>
+                        <tr>
+                            <td>Geografia</td>
+                            <td>9.5</td>
+                            <td>6.7</td>
+                            <td>8.1</td>
+                        </tr>
+                        <tr>
+                            <th class="the" scope="row" colspan="4">Média de Humanas</th>
+                            <td class="media">7.8</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th class="the" scope="row" colspan="4">Média Total</th>
+                            <td class="media">7.3</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>Desafio 12 do <span>Módulo 3: &#x1F9F7;  Versionamento</span>, do Curso de HTML5 e CSS3 do <a href="https://www.cursoemvideo.com" target="_blank" rel="noopener noreferrer nofollow">CursoemVideo</a>, feito por <a href="https://github.com/DimiEmerick" target="_blank" rel="noopener noreferrer nofollow">Dimitrios Emerick</a>.</p>
+    </footer>
+</body>
+</html>

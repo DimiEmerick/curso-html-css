@@ -189,6 +189,19 @@ section > p > a:hover {
     background-position: center center;
 }
 
+/*  RODAPÉ  */
+footer {
+    background-color: var(--escuro);
+    color: var(--textescuro);
+
+    font-size: 1.25em;
+    font-weight: bold;
+
+    min-height: 50px;
+    padding: 10px 0 10px 50px;
+    border-top: 1px solid var(--claro);
+}
+
 
 
 /*  MEDIAS  */

@@ -1,0 +1,66 @@
+/*  RESPONSIVIDADE  */
+
+/* 
+      Typical Device Breakpoints
+    ------------------------------
+    Pequenas telas: até 600px
+    Celular: 600px até 768px
+    Tablet: 768px até 992px
+    Desktop: 992px até 1200px
+    Grandes telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) and (max-width: 992px) 
+{
+    #ling-block {
+        display: inline-block;
+    }
+    h1 {
+        font-size: 1.6em;
+    }
+    .links > a {
+        font-size: 3.5em;
+        margin: 0 15px;
+    }
+
+    article {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 750px;
+    }
+    section {
+        width: 365px;
+    }
+
+    aside {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 4000px) {
+    #ling-block {
+        display: inline-block;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    .links > a {
+        font-size: 4.2em;
+        margin: 0 20px;
+    }
+
+    main {
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin: 50px 0;
+    }
+    article {
+        justify-content: space-evenly;
+        width: 500px;
+        height: 60vh;
+    }
+
+    aside {
+        width: 400px;
+    }
+}
